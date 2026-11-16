@@ -113,6 +113,79 @@ textarea{width:100%;min-height:110px;background:#0e0b20;color:var(--ink);border:
 .toggle{display:flex;gap:8px;align-items:center}
 @media (min-height:820px){#tapZone{flex-basis:36vh}}
 @media (hover:hover){.buy:hover{filter:brightness(1.08)} nav button:hover{color:var(--ink)}}
+/* ---- v2.1 ---- */
+#panel{padding:8px 10px 20px}
+h3 .cnt,.cnt{font-size:12.5px;color:var(--mut);font-weight:700}
+h3.cat{font-size:13.5px;color:var(--mut);margin-top:12px}
+.sub{gap:6px;margin:2px 0 10px}
+.sub button{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-height:50px;padding:4px 2px;font-size:12px;line-height:1.1;min-width:0}
+.sub button b{font-size:18px;line-height:1.1}
+.sdot{position:absolute;top:5px;right:8px;width:8px;height:8px;border-radius:50%;background:var(--acc);display:none}.sdot.on{display:block}
+.hero{background:linear-gradient(135deg,#3b2a78,#26205a);border-radius:16px;padding:14px;margin-bottom:10px;box-shadow:inset 0 0 0 1px #ffc65c33}
+.hero.god{background:linear-gradient(135deg,#4a3672,#2b2156);box-shadow:inset 0 0 0 1px #ffe08a55}
+.hero.boss{text-align:center;box-shadow:inset 0 0 0 1.5px var(--bc),0 0 18px -6px var(--bc)}
+.hero .lbl,.tile .lbl{font-size:11.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.6px;font-weight:700}
+.hero .gain{font-size:28px;font-weight:900;color:var(--acc2);line-height:1.15;margin-top:2px}
+.hero.god .gain{color:#ffe08a}
+.hs{font-size:12.5px;color:var(--mut);margin-top:3px;line-height:1.35}
+.bossic{font-size:56px;line-height:1;filter:drop-shadow(0 0 14px var(--bc))}
+.prog{margin-top:10px}.prog .pl{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;color:var(--mut)}.prog .pl b{color:var(--ink);text-align:right}
+.prog .bar{height:8px;border-radius:4px}.prog.ok .bar i{background:linear-gradient(90deg,#3fcf8e,var(--good))}
+.hero .big{margin:12px 0 0}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.tile{background:var(--card);border-radius:12px;padding:10px;min-width:0}
+.tile .v{font-size:17px;font-weight:800;margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tile .s{font-size:11.5px;color:var(--mut);margin-top:2px;line-height:1.3}
+details.card summary{font-weight:700;cursor:pointer;min-height:24px;color:var(--ink)}
+.arow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:5px 0;min-height:44px}
+.tog{border:0;border-radius:22px;min-width:72px;min-height:40px;font-weight:800;font-size:14px;background:#3d3670;color:#b3abd6;flex:0 0 auto}
+.tog.on{background:var(--good);color:#10291c}
+.lockt{font-size:12.5px;color:var(--mut);text-align:right}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 2px 6px}
+.chips button{border:0;border-radius:20px;background:var(--card);min-height:40px;min-width:48px;padding:0 14px;font-weight:700;font-size:13px;color:var(--mut)}
+.chips button.on{background:var(--acc2);color:#1b1030}
+.achg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:4px}
+.achc{background:var(--card);border-radius:12px;padding:9px;font-size:12px;color:var(--mut);min-width:0;line-height:1.3}
+.achc.got{color:var(--ink);background:linear-gradient(135deg,#3a2f7a,#2a235c);box-shadow:inset 0 0 0 1px #ffc65c55}
+.achc b{display:block;font-size:13px;color:var(--ink);margin-bottom:2px}
+.achc .bar{height:4px}.achc .pv{font-size:11px;margin-top:3px}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin:8px 0}
+.days div{background:#0003;border-radius:8px;padding:5px 0;text-align:center;font-size:10.5px;color:var(--mut);line-height:1.35}
+.days div.got{background:#2b6b52;color:#c9ffe6}.days div.now{background:var(--acc2);color:#1b1030;font-weight:800}
+.card.ev{font-size:13px}
+.expg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.expg .buy{min-width:0;width:100%}
+.tree{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:10px}
+.br{display:flex;flex-direction:column;gap:14px;min-width:0}
+.br h4{margin:0;text-align:center;font-size:13px;color:var(--acc2)}
+.node{position:relative;border:0;border-radius:14px;background:var(--card);min-height:70px;padding:6px 4px;font-size:11.5px;line-height:1.2;color:var(--mut);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;opacity:.6}
+.node b{font-size:20px}.node small{font-size:10.5px;font-weight:700}
+.node.open{opacity:1;color:var(--ink);box-shadow:inset 0 0 0 1.5px #ffffff33}
+.node.can{box-shadow:inset 0 0 0 1.5px var(--acc2),0 0 10px #ffc65c55}
+.node.own{opacity:1;background:linear-gradient(135deg,#3a7a5a,#245a44);color:#eafff4}
+.node.sel{outline:2px solid var(--acc2);outline-offset:1px}
+.node+.node::before{content:'';position:absolute;top:-14px;left:50%;width:3px;height:14px;background:#ffffff22;transform:translateX(-50%)}
+.node.own+.node::before{background:var(--good)}
+.skins{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.skin{border:0;border-radius:14px;background:var(--card);padding:8px 4px;min-height:104px;font-size:12px;display:flex;flex-direction:column;align-items:center;gap:4px;color:var(--ink);line-height:1.2}
+.skin small{font-size:10.5px;color:var(--mut)}.skin.lock{opacity:.5}.skin.on{box-shadow:inset 0 0 0 2px var(--acc2)}
+.sw{display:block;width:46px;height:46px;border-radius:50%;box-shadow:0 0 10px #0006}
+#boss{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:min(90%,360px);background:#100d22e6;border-radius:12px;padding:6px 10px;z-index:8;pointer-events:none;display:none;font-size:12.5px;text-align:center;border:1px solid #ff6b7a88}
+#boss.show{display:block}#boss .bic{font-size:18px}
+#boss .hp{height:10px;background:#0008;border-radius:5px;overflow:hidden;margin-top:4px}#boss .hp i{display:block;height:100%;background:linear-gradient(90deg,#ff3d5a,#ff9b4f);width:100%}
+#tip{display:none;align-items:center;gap:6px;margin:0 10px 6px;padding:4px 4px 4px 12px;background:#2c2466;border:1px solid #ffc65c66;border-radius:12px;font-size:13px;line-height:1.3}
+#tip.show{display:flex}#tip span{flex:1}
+#tip button{border:0;border-radius:10px;background:var(--acc2);color:#1b1030;font-weight:800;min-height:40px;min-width:64px;font-size:13px}
+#tip button+button{min-width:40px;background:#ffffff14;color:var(--ink)}
+.toast b{color:var(--acc2);margin-left:4px}
+.toast.bump{animation:tin2 3.2s ease forwards}
+@keyframes tin2{0%{transform:scale(1.06)}10%,85%{opacity:1;transform:none}100%{opacity:0}}
+.bcol{display:flex;flex-direction:column;gap:6px}
+.mbig{font-size:26px;font-weight:900;color:var(--acc2);text-align:center;margin:10px 0!important}
+#rsIn{width:100%;min-height:46px;font-size:16px;border-radius:10px;border:1px solid #ffffff33;background:#0e0b20;color:var(--ink);padding:0 12px;margin:4px 0 10px;-webkit-user-select:text;user-select:text;text-transform:uppercase;letter-spacing:2px}
+.buffs{display:flex;flex-wrap:wrap;justify-content:center;gap:2px 8px;padding:0 50px}
+.buffs .evb{background:#ff6b7a33;border-radius:10px;padding:0 8px;color:#ffd6dc}
+.buy.alt{background:var(--card2);box-shadow:0 3px 0 #1d1840;color:var(--ink)}
+.row .nm .own{font-size:13px}
 </style>
 </head>
 <body>
@@ -129,14 +202,16 @@ textarea{width:100%;min-height:110px;background:#0e0b20;color:var(--ink);border:
   <button id="orb" aria-label="Train"><span class="ring"></span><span class="glyph">気</span></button>
   <button id="fox" class="foxb" aria-label="Spirit fox">🦊</button>
   <div id="abar"></div>
+  <div id="boss"></div>
  </div>
+ <div id="tip"></div>
  <div id="panel"></div>
  <nav id="nav">
   <button data-tab="clan" class="on"><span class="dot"></span><b>🥷</b>Clan</button>
-  <button data-tab="tech"><span class="dot"></span><b>📜</b>Train</button>
   <button data-tab="blood"><span class="dot"></span><b>🩸</b>Blood</button>
   <button data-tab="beast"><span class="dot"></span><b>🐾</b>Beasts</button>
   <button data-tab="ascend"><span class="dot"></span><b>🔮</b>Rebirth</button>
+  <button data-tab="quest"><span class="dot"></span><b>⚔️</b>Quests</button>
   <button data-tab="more"><span class="dot"></span><b>🏆</b>More</button>
  </nav>
  <div id="modal"><div class="box" id="mbox"></div></div>
@@ -145,7 +220,7 @@ textarea{width:100%;min-height:110px;background:#0e0b20;color:var(--ink);border:
 <script>
 (function(){
 "use strict";
-var VERSION='2.0.0', KEY='bloodlineDojo.save.v1';
+var VERSION='2.1.0', KEY='bloodlineDojo.save.v1';
 
 /* ---------- DATA ---------- */
 var GENS=[
@@ -201,27 +276,37 @@ var BLOODS=[
  {id:'godspark',name:'Godspark Blood',ic:'✴️',cost:1e42,req:{god:3},d:'All production ×25. Offline at 100% with +12h limit. Spirit beasts ×3.',fx:{all:25,offline:1,offH:12,beast:3}}
 ];
 
-var CLICK_TPS=[0,1,2,3,5,8,12,20,30,50,75,100,150,200,300];
-function clickTps(l){return CLICK_TPS[Math.min(l,CLICK_TPS.length-1)]}
+var CLICK_TPS=[0,1,2,3,5,8,12,20,30,50,75,100,150,200,300,400,500,650,800,1000,1250,1500,1800,2100,2500];
+function clickTps(l){return CLICK_TPS[Math.max(0,Math.min(l,CLICK_TPS.length-1))]}
+function comma(n){return String(Math.floor(n)).replace(/\B(?=(\d{3})+(?!\d))/g,',')}
+// v2.1 shop prices: tier 1 costs c0, the top tier costs cN, on a convex curve (gentle start, steep end).
+// Never cheaper than the v2.0 price of the same tier (old), and never above cN, so prices can't overflow.
+function shopCost(c0,cN,max,p,old){var a=Math.log10(c0),b=Math.log10(cN);return function(l){l=Math.max(0,Math.min(l,max-1));var x=max>1?l/(max-1):0;return Math.max(Math.ceil(Math.pow(10,a+(b-a)*Math.pow(x,p))),old?Math.ceil(old(l)):0)}}
+function thriftPct(l){return l<=10?l*5:Math.min(70,50+(l-10)*4)} // 5%/tier to 50%, then 4%/tier, capped at 70%
 // Rebirth Shop: bought with Spirit Seals, kept through Ascension, reset by God Rebirth. eff(l) = effect at tier l.
 var PERKS=[
- {id:'echo',cat:'⚙️ Auto Clicker',name:'Auto Clicker',ic:'🖱️',max:14,cost:function(l){return Math.ceil(Math.pow(1.6,l))},eff:function(l){return l?clickTps(l)+' auto-taps/sec':'No auto-taps'}},
- {id:'critc',cat:'⚙️ Auto Clicker',name:'Clicker Crits',ic:'💥',max:3,cost:function(l){return [15,60,250][l]},eff:function(l){return l?(l*10)+'% of auto-taps crit for ×'+'10+':'Auto-taps never crit'}},
- {id:'kimult',cat:'💪 Power',name:'Ki Infusion',ic:'💠',max:20,cost:function(l){return Math.ceil(3*Math.pow(1.7,l))},eff:function(l){return 'All Ki ×'+fmt(Math.pow(1.5,l))}},
- {id:'thrift',cat:'💪 Power',name:'Clan Discount',ic:'🏷️',max:10,cost:function(l){return Math.ceil(2*Math.pow(1.6,l))},eff:function(l){return 'Clan members cost '+(l*5)+'% less'}},
- {id:'swift',cat:'⏩ Rebirth Speed',name:'Swift Rebirth',ic:'⏩',max:7,cost:function(l){return Math.ceil(3*Math.pow(2.2,l))},eff:function(l){return 'Runs must last '+fmtTime(SWIFT[l])+' before you can Ascend'}},
- {id:'start',cat:'💪 Power',name:'Head Start',ic:'🎒',max:8,cost:function(l){return 2+2*l},eff:function(l){return l?'Start each run with '+fmt(startKi(l))+' Ki':'No starting Ki'}},
- {id:'keep',cat:'💪 Power',name:'Ancestral Vault',ic:'🏺',max:6,cost:function(l){return Math.ceil(10*Math.pow(2,l))},eff:function(l){return l?'Keep your first '+l+' bloodline'+(l>1?'s':'')+' on rebirth':'Bloodlines all fade on rebirth'}},
- {id:'memory',cat:'💪 Power',name:'Blood Memory',ic:'🧬',max:7,cost:function(l){return 3+2*l},eff:function(l){return 'Bloodlines cost '+(l*10)+'% less'}},
- {id:'reson',cat:'💪 Power',name:'Seal Resonance',ic:'🔯',max:25,cost:function(l){return Math.ceil(8*Math.pow(1.5,l))},eff:function(l){return '+'+(l*25)+'% Spirit Seals per Ascension'}},
- {id:'deep',cat:'🌙 Utility',name:'Deep Meditation',ic:'🧘',max:10,cost:function(l){return 2+l},eff:function(l){return 'Offline limit +'+(2*l)+'h'}},
- {id:'offrate',cat:'🌙 Utility',name:'Dream Ledger',ic:'📒',max:5,cost:function(l){return 4+3*l},eff:function(l){return 'Offline earnings +'+(l*10)+'% rate'}},
- {id:'lure',cat:'🌙 Utility',name:'Fox Lure',ic:'🍡',max:10,cost:function(l){return 2+l},eff:function(l){return 'Spirit foxes appear '+(l*15)+'% more often'}},
- {id:'sixc',cat:'🌙 Utility',name:'Fate Thread',ic:'🧵',max:8,cost:function(l){return Math.ceil(20*Math.pow(1.8,l))},eff:function(l){return (sixthChanceAt(l)*100).toFixed(1)+'% Sixth Path chance per run'}},
- {id:'steward',cat:'🤖 Automation',name:'Phantom Steward',ic:'🪄',max:3,cost:function(l){return [5,15,40][l]},eff:function(l){return ['No auto-buying','Auto-buys clan members','Auto-buys clan + Training','Auto-buys clan, Training, bloodlines and beast levels'][l]}},
- {id:'cycle',cat:'🤖 Automation',name:'Cycle Sigil',ic:'♻️',max:1,cost:function(l){return 25},eff:function(l){return l?'Auto-Ascend unlocked (set it above)':'Auto-Ascend locked'}}
+ {id:'echo',cat:'⚙️ Auto Clicker',name:'Auto Clicker',ic:'🖱️',max:24,cost:shopCost(1,1e26,24,1.6,function(l){return Math.pow(1.6,l)}),eff:function(l){return l?comma(clickTps(l))+' auto-taps/sec':'No auto-taps'}},
+ {id:'critc',cat:'⚙️ Auto Clicker',name:'Clicker Crits',ic:'💥',max:6,cost:shopCost(15,1e12,6,1.3,function(l){return 15*Math.pow(4,l)}),eff:function(l){return l?(l*10)+'% of auto-taps crit':'Auto-taps never crit'}},
+ {id:'kimult',cat:'💪 Power',name:'Ki Infusion',ic:'💠',max:35,cost:shopCost(3,1e30,35,1.5,function(l){return 3*Math.pow(1.7,l)}),eff:function(l){return 'All Ki ×'+fmt(Math.pow(1.5,l))}},
+ {id:'tapx',cat:'💪 Power',name:'Thousand Hands',ic:'🙌',max:15,cost:shopCost(1e6,1e28,15,1.3),eff:function(l){return l?'Taps ×'+fmt(Math.pow(3,l)):'Taps ×1 (×3 per tier)'}},
+ {id:'thrift',cat:'💪 Power',name:'Clan Discount',ic:'🏷️',max:15,cost:shopCost(2,1e20,15,1.6,function(l){return 2*Math.pow(1.6,l)}),eff:function(l){return 'Clan members cost '+thriftPct(l)+'% less'}},
+ {id:'start',cat:'💪 Power',name:'Head Start',ic:'🎒',max:12,cost:shopCost(2,1e14,12,1.4,function(l){return 2+2*l}),eff:function(l){return l?'Start each run with '+fmt(startKi(l))+' Ki':'No starting Ki'}},
+ {id:'keep',cat:'💪 Power',name:'Ancestral Vault',ic:'🏺',max:12,cost:shopCost(10,1e26,12,1.5,function(l){return 10*Math.pow(2,l)}),eff:function(l){return l?'Keep your first '+l+' bloodline'+(l>1?'s':'')+' on rebirth':'Bloodlines all fade on rebirth'}},
+ {id:'memory',cat:'💪 Power',name:'Blood Memory',ic:'🧬',max:7,cost:shopCost(3,1e9,7,1.4,function(l){return 3+2*l}),eff:function(l){return 'Bloodlines cost '+(l*10)+'% less'}},
+ {id:'reson',cat:'💪 Power',name:'Seal Resonance',ic:'🔯',max:35,cost:shopCost(8,1e30,35,1.6,function(l){return 8*Math.pow(1.5,l)}),eff:function(l){return '+'+(l*25)+'% Spirit Seals per Ascension'}},
+ {id:'swift',cat:'⏩ Rebirth Speed',name:'Swift Rebirth',ic:'⏩',max:7,cost:shopCost(3,1e31,7,2.2,function(l){return 3*Math.pow(2.2,l)}),eff:function(l){return 'Runs must last '+fmtTime(SWIFT[l])+' before you can Ascend'}},
+ {id:'deep',cat:'🌙 Utility',name:'Deep Meditation',ic:'🧘',max:15,cost:shopCost(2,1e10,15,1.5,function(l){return 2+l}),eff:function(l){return 'Offline limit +'+(2*l)+'h'}},
+ {id:'offrate',cat:'🌙 Utility',name:'Dream Ledger',ic:'📒',max:10,cost:shopCost(4,1e10,10,1.5,function(l){return 4+3*l}),eff:function(l){return 'Offline earnings +'+(l*10)+'% rate'}},
+ {id:'lure',cat:'🌙 Utility',name:'Fox Lure',ic:'🍡',max:15,cost:shopCost(2,1e10,15,1.5,function(l){return 2+l}),eff:function(l){return 'Spirit foxes appear '+(l*15)+'% more often'}},
+ {id:'sixc',cat:'🌙 Utility',name:'Fate Thread',ic:'🧵',max:13,cost:shopCost(20,1e24,13,1.5,function(l){return 20*Math.pow(1.8,l)}),eff:function(l){return (sixthChanceAt(l)*100).toFixed(1)+'% Sixth Path chance per run'}},
+ {id:'steward',cat:'🤖 Automation',name:'Phantom Steward',ic:'🪄',max:3,cost:function(l){return [5,25,100][Math.min(l,2)]},eff:function(l){return ['No auto-buying','Auto-buys clan members','Auto-buys clan + Training','Auto-buys clan, Training, bloodlines and beast levels'][l]}},
+ {id:'cycle',cat:'🤖 Automation',name:'Cycle Sigil',ic:'♻️',max:1,cost:function(l){return 30},eff:function(l){return l?'Auto-Ascend unlocked (Rebirth › Ascension)':'Auto-Ascend locked'}},
+ {id:'scroll',cat:'🌌 Late Game',name:'Mastery Scroll',ic:'📜',max:5,cost:shopCost(1e8,1e24,5,1.2),eff:function(l){return 'Rebirth Mastery +'+(3+l)+'% Ki per Ascension'}},
+ {id:'totem',cat:'🌌 Late Game',name:'Beast Totem',ic:'🗿',max:10,cost:shopCost(1e18,1e30,10,1.2),eff:function(l){return l?'Spirit beasts ×'+fmt(Math.pow(2,l)):'Spirit beasts ×1 (×2 per tier)'}},
+ {id:'ladder',cat:'🌌 Late Game',name:'Heaven\'s Ladder',ic:'🪜',max:10,cost:shopCost(1e26,1e36,10,1.2),eff:function(l){return '+'+(l*5)+'% Divinity from God Rebirth'}}
 ];
 PERKS.forEach(function(p){p.d=function(l){return 'Tier '+l+'/'+p.max+' · Now: '+p.eff(l)+(l<p.max?' · Next: '+p.eff(l+1):'')}});
+
 var BEASTS=[
  {id:'b1',tails:1,name:'Emberkit',title:'One-Tailed Cinder Mink',ic:'🦦',col:'#ff8a3d',at:100},
  {id:'b2',tails:2,name:'Frostmaw',title:'Two-Tailed Glacier Lynx',ic:'🐈',col:'#7cc4ff',at:110},
@@ -247,62 +332,179 @@ var ABIL=[
  {id:'genesis',name:'Heavenly Genesis',ic:'🌅',max:3,cost:function(l){return 3+3*l},d:function(l){return 'Start each God cycle with '+fmt(genesisSeals(Math.max(1,l)))+' Spirit Seals'+(l&&l<3?' (next: '+fmt(genesisSeals(l+1))+')':'')+'.'}}
 ];
 function skipH(l){return 1+l}
-function sixthChanceAt(l){return Math.min(0.05,SIXTH_BASE+SIXTH_STEP*l)}
+function sixthChanceAt(l){return Math.min(SIXTH_CAP,SIXTH_BASE+SIXTH_STEP*l)}
 function genesisSeals(l){return l?Math.pow(10,2*l):0}
 function startKi(l){return l?Math.pow(10,2+l):25}
 
+/* ---------- v2.1 DATA ---------- */
+var TAPPER_TPS=5, MAX_TAPPERS=20, EXP_MIN=10, TRIAL_T=30, TRIAL_CD_WIN=180, TRIAL_CD_LOSE=90, Q_REFRESH=300, Q_REROLL=600, EV_GAP=480;
+// Talent tree: 3 branches x 5 nodes, learned in order inside each branch. Permanent (survive every rebirth). Respec is free.
+var TAL=[
+ {id:'t1',br:'tap',name:'Iron Knuckles',ic:'✊',cost:1,d:'Taps ×2.'},
+ {id:'t2',br:'tap',name:'Boss Slayer',ic:'🗡️',cost:2,d:'Your taps deal +50% damage in Trials.'},
+ {id:'t3',br:'tap',name:'Pressure Points',ic:'🎯',cost:3,d:'+5% critical chance on every tap and auto-tap.'},
+ {id:'t4',br:'tap',name:'Echo Palm',ic:'🖐️',cost:4,d:'Auto Clicker taps ×3.'},
+ {id:'t5',br:'tap',name:'Thousand Fists',ic:'💥',cost:5,d:'Taps ×10.'},
+ {id:'c1',br:'clan',name:'Drill Sergeant',ic:'📣',cost:1,d:'Clan production ×2.'},
+ {id:'c2',br:'clan',name:'Recruiter',ic:'🤝',cost:2,d:'Clan members cost 10% less.'},
+ {id:'c3',br:'clan',name:'Pathfinder',ic:'🧭',cost:3,d:'+1 expedition slot.'},
+ {id:'c4',br:'clan',name:'Quartermaster',ic:'🎒',cost:4,d:'Expedition Ki and seal rewards ×2.'},
+ {id:'c5',br:'clan',name:'Grand Dojo',ic:'🏯',cost:5,d:'Clan production ×10.'},
+ {id:'s1',br:'spirit',name:'Fox Charm',ic:'🦊',cost:1,d:'Spirit foxes appear 25% more often.'},
+ {id:'s2',br:'spirit',name:'Seal Scribe',ic:'📜',cost:2,d:'+25% Spirit Seals from every Ascension.'},
+ {id:'s3',br:'spirit',name:'Quest Lore',ic:'📖',cost:3,d:'Mission rewards ×2.'},
+ {id:'s4',br:'spirit',name:'Moonlit Vigil',ic:'🌙',cost:4,d:'Offline limit +4h and offline rate +25%.'},
+ {id:'s5',br:'spirit',name:'Spirit Sovereign',ic:'👑',cost:5,d:'All Ki ×5 and spirit beasts ×5.'}
+];
+var BRANCHES=[['tap','👊','Tap'],['clan','🥷','Clan'],['spirit','🦊','Spirit']];
+// Trial bosses (original): [icon, name, colour]
+var BOSSES=[['👹','Oni of the Red Gate','#ff5a5a'],['🗿','Kurogane the Stone Warden','#c9b28a'],['🐙','Inkmaw of the Deep','#7c8cff'],['🦂','Dune King Sekhar','#ffb347'],['🐲','Stormcoil Wyrm','#7cf0ff'],['💀','The Hollow Shogun','#d6d6ff']];
+// Expeditions: s seconds, k = share of Ki/sec x duration, sl = share of your seals, tp = Shadow Tapper chance, mp = Mastery Point chance
+var EXPD=[
+ {s:900,n:'15m',name:'Bamboo Patrol',k:0.5,sl:0.01,tp:0.05,mp:0},
+ {s:3600,n:'1h',name:'Mountain Pass',k:0.6,sl:0.03,tp:0.15,mp:0.1},
+ {s:14400,n:'4h',name:'Sunken Temple',k:0.7,sl:0.08,tp:0.35,mp:0.3},
+ {s:28800,n:'8h',name:'Edge of the Map',k:0.8,sl:0.15,tp:0.6,mp:0.5}
+];
+// Daily gift: h = hours of Ki production
+var DAILY=[{h:1/6,ic:'💰'},{h:1/3,ic:'💰'},{h:0.5,surge:300,ic:'⚡'},{h:1,ic:'💰'},{h:1.5,mp:1,ic:'🌳'},{h:2,ic:'💰'},{h:3,mp:2,sl:0.05,ic:'🎁'}];
+var EVENTS=[
+ {id:'moon',ic:'🌕',name:'Blood Moon',d:'All Ki ×3',t:120},
+ {id:'rain',ic:'⛈️',name:'Iron Rain',d:'Taps ×5',t:120},
+ {id:'fest',ic:'🏮',name:'Fox Festival',d:'Spirit foxes keep appearing',t:90},
+ {id:'tide',ic:'🌊',name:'Spirit Tide',d:'Auto Clicker taps ×3',t:120}
+];
+var SKINS=[
+ {id:'ember',name:'Ember',req:'Default skin',ok:function(){return true},bg:'radial-gradient(circle at 35% 30%,#fff3c4 0,#ffb347 18%,#ff6a2b 45%,#9c1f5a 75%,#3b1060 100%)'},
+ {id:'jade',name:'Jade Lotus',req:'Ascend 5 times',ok:function(){return S.ascLife>=5},bg:'radial-gradient(circle at 35% 30%,#eafff0 0,#7dffb0 18%,#21b36b 45%,#0d5a4a 75%,#0a2a30 100%)'},
+ {id:'frost',name:'Frost Spirit',req:'Catch 25 spirit foxes',ok:function(){return S.foxes>=25},bg:'radial-gradient(circle at 35% 30%,#fff 0,#bdf3ff 18%,#5ab6ff 45%,#2a4fb0 75%,#151a50 100%)'},
+ {id:'sakura',name:'Sakura',req:'Reach a 7-day login streak',ok:function(){return S.dBest>=7},bg:'radial-gradient(circle at 35% 30%,#fff0f6 0,#ffc2dd 18%,#ff7fb2 45%,#b0306f 75%,#4a1040 100%)'},
+ {id:'thunder',name:'Thunderhead',req:'Win 5 Trials',ok:function(){return S.trWins>=5},bg:'radial-gradient(circle at 35% 30%,#fffbe0 0,#ffe066 18%,#9ad0ff 45%,#3a3fa0 75%,#16123a 100%)'},
+ {id:'void',name:'Void Pearl',req:'Ascend 25 times',ok:function(){return S.ascLife>=25},bg:'radial-gradient(circle at 35% 30%,#e8d8ff 0,#8a5cff 18%,#3a1a8a 45%,#120838 75%,#05020f 100%)'},
+ {id:'gold',name:'Sixth Path Gold',req:'Be born on the Sixth Path',ok:function(){return S.sixthLife>=1},bg:'radial-gradient(circle at 35% 30%,#fffbe6 0,#fff1a8 18%,#ffd23d 45%,#c07a10 75%,#4a2a05 100%)'},
+ {id:'divine',name:'Divine Halo',req:'God Rebirth once',ok:function(){return S.god>=1},bg:'radial-gradient(circle at 35% 30%,#fff 0,#ffe08a 20%,#ffb0f0 50%,#7a5cff 80%,#2a1a60 100%)'},
+ {id:'aurora',name:'Aurora',req:'Unlock 60 achievements',ok:function(){return countAch()>=60},bg:'radial-gradient(circle at 35% 30%,#fff 0,#9effe0 18%,#7cc4ff 40%,#c08aff 65%,#ff7ab0 85%,#3b1060 100%)'}
+];
+var TIPS=[
+ {t:'Tap the glowing orb to train Ki.',done:function(){return S.mtaps>=10||S.life>=100}},
+ {t:'Recruit a Village Recruit in the Clan tab. Clan members earn Ki even while you are away.',done:function(){return S.bought>=1||S.ascLife>=1}},
+ {t:'Open Clan › Training to make every tap stronger.',done:function(){return S.tech.focus>=1||S.ascLife>=1}},
+ {t:'Awaken your first bloodline in the Blood tab for a ×2 boost.',done:function(){return S.bloodBuys>=1||S.ascLife>=1}},
+ {t:'Open Quests › Goals to claim your daily gift and start missions.',done:function(){return S.dTotal>=1||S.missionsDone>=1}},
+ {t:'Earn 3M Ki in one run, then Ascend in the Rebirth tab for Spirit Seals.',done:function(){return S.ascLife>=1}},
+ {t:'Spend Spirit Seals in Rebirth › Shop. The Auto Clicker taps for you.',done:function(){return shopTiers()>=1}},
+ {t:'Trials are open in Quests. Beat a boss by tapping fast to earn Mastery Points for Talents.',done:function(){return S.trWins>=1}}
+];
+
+// Achievements: {id,cat,name,d,cur(),n target,hid secret,t:'time' formatting}. Unlocks when cur() >= n. Each is +2% production forever.
+var C_T='👊 Taps',C_K='💰 Ki',C_C='🥷 Clan',C_B='🩸 Bloodlines',C_R='🔮 Rebirth',C_S='🛒 Shop',C_BE='🐾 Beasts',C_G='✴️ God',C_F='🦊 Foxes & Luck',C_Q='⚔️ Quests',C_X='🤫 Secret';
+var ACH_CATS=[C_T,C_K,C_C,C_B,C_R,C_S,C_BE,C_G,C_F,C_Q,C_X];
+function A(id,cat,name,d,cur,n,hid,t){return {id:id,cat:cat,name:name,d:d,cur:cur,n:n,hid:!!hid,t:t||''}}
+function cTaps(){return S.taps}function cCrits(){return S.crits}function cLife(){return S.life}function cKps(){return kps()}
+function cAsc(){return S.ascLife}function cFox(){return S.foxes}function cGod(){return S.god}
 var ACH=[
- ['tap1','First Breath','Tap once.',function(){return S.taps>=1}],
- ['tap100','Warm Up','Tap 100 times.',function(){return S.taps>=100}],
- ['tap1k','Iron Fingers','Tap 1,000 times.',function(){return S.taps>=1000}],
- ['tap10k','Thousand Fists','Tap 10,000 times.',function(){return S.taps>=10000}],
- ['crit','Crimson Bloom','Land a critical tap.',function(){return S.crits>=1}],
- ['k1','Spark','Earn 1K Ki total.',function(){return S.life>=1e3}],
- ['m1','Flame','Earn 1M Ki total.',function(){return S.life>=1e6}],
- ['b1','Inferno','Earn 1B Ki total.',function(){return S.life>=1e9}],
- ['t1','Star Fire','Earn 1T Ki total.',function(){return S.life>=1e12}],
- ['qa1','Supernova','Earn 1Qa Ki total.',function(){return S.life>=1e15}],
- ['s10','Humming','Reach 10 Ki/sec.',function(){return kps()>=10}],
- ['s1k','Roaring','Reach 1K Ki/sec.',function(){return kps()>=1e3}],
- ['s1m','Thunderous','Reach 1M Ki/sec.',function(){return kps()>=1e6}],
- ['s1b','World Shaking','Reach 1B Ki/sec.',function(){return kps()>=1e9}],
- ['r50','Full Courtyard','Own 50 Village Recruits.',function(){return S.gens.recruit>=50}],
- ['c100','Growing Clan','Own 100 clan members.',function(){return totalGens()>=100}],
- ['c500','Great Clan','Own 500 clan members.',function(){return totalGens()>=500}],
- ['all','Every Path','Own at least 1 of every clan member.',function(){return GENS.every(function(g){return S.gens[g.id]>0})}],
- ['bl1','Awakened','Unlock a bloodline.',function(){return countBloods()>=1}],
- ['bl6','Mixed Heritage','Unlock 6 bloodlines in one run.',function(){return countBloods()>=6}],
- ['blall','Pure Legend','Unlock every bloodline in one run.',function(){return countBloods()>=BLOODS.length}],
- ['fox1','Fox Friend','Catch a spirit fox.',function(){return S.foxes>=1}],
- ['fox25','Fox Whisperer','Catch 25 spirit foxes.',function(){return S.foxes>=25}],
- ['asc1','Ascended','Ascend once.',function(){return S.ascLife>=1}],
- ['asc5','Cycle of Rebirth','Ascend 5 times.',function(){return S.ascLife>=5}],
- ['asc25','Wheel Turner','Ascend 25 times.',function(){return S.ascLife>=25}],
- ['asc100','Hundredfold','Ascend 100 times.',function(){return S.ascLife>=100}],
- ['beast1','Spirit Bond','Summon a spirit beast.',function(){return beastCount()>=1}],
- ['beast9','Nine Tails Assembled','Summon all nine spirit beasts.',function(){return beastCount()>=9}],
- ['god1','Godhood','God Rebirth once.',function(){return S.god>=1}],
- ['god3','Pantheon','God Rebirth 3 times.',function(){return S.god>=3}],
- ['sixth1','Born Different','Be born on the Sixth Path.',function(){return S.sixthLife>=1}],
- ['googol','Googol','Earn 1e100 Ki total.',function(){return S.life>=1e100}],
- ['seal50','Seal Keeper','Hold 50 Spirit Seals.',function(){return S.sealsTotal>=50}],
- ['away','Rested','Come back to offline earnings.',function(){return S.offlineGot>=1}],
- ['focus50','Disciplined','Reach Focus Training level 50.',function(){return S.tech.focus>=50}]
+ A('tap1',C_T,'First Breath','Tap once.',cTaps,1),
+ A('tap100',C_T,'Warm Up','Tap 100 times.',cTaps,100),
+ A('tap1k',C_T,'Iron Fingers','Tap 1,000 times.',cTaps,1e3),
+ A('tap10k',C_T,'Thousand Fists','Tap 10,000 times.',cTaps,1e4),
+ A('tap100k',C_T,'Blur of Palms','Tap 100,000 times (auto-taps count).',cTaps,1e5),
+ A('tap1m',C_T,'Millionfold Strike','Tap 1,000,000 times.',cTaps,1e6),
+ A('crit',C_T,'Crimson Bloom','Land a critical tap.',cCrits,1),
+ A('crit1k',C_T,'Critical Mass','Land 1,000 critical taps.',cCrits,1e3),
+ A('focus50',C_T,'Disciplined','Reach Focus Training level 50.',function(){return S.tech.focus},50),
+ A('k1',C_K,'Spark','Earn 1K Ki total.',cLife,1e3),
+ A('m1',C_K,'Flame','Earn 1M Ki total.',cLife,1e6),
+ A('b1',C_K,'Inferno','Earn 1B Ki total.',cLife,1e9),
+ A('t1',C_K,'Star Fire','Earn 1T Ki total.',cLife,1e12),
+ A('qa1',C_K,'Supernova','Earn 1Qa Ki total.',cLife,1e15),
+ A('sx1',C_K,'Galaxy Brain','Earn 1Sx Ki total.',cLife,1e21),
+ A('dc1',C_K,'Decillionaire','Earn 1Dc Ki total.',cLife,1e33),
+ A('e50',C_K,'Off the Charts','Earn 1e50 Ki total.',cLife,1e50),
+ A('googol',C_K,'Googol','Earn 1e100 Ki total.',cLife,1e100),
+ A('s10',C_K,'Humming','Reach 10 Ki/sec.',cKps,10),
+ A('s1k',C_K,'Roaring','Reach 1K Ki/sec.',cKps,1e3),
+ A('s1m',C_K,'Thunderous','Reach 1M Ki/sec.',cKps,1e6),
+ A('s1b',C_K,'World Shaking','Reach 1B Ki/sec.',cKps,1e9),
+ A('s1t',C_K,'Unstoppable','Reach 1T Ki/sec.',cKps,1e12),
+ A('r50',C_C,'Full Courtyard','Own 50 Village Recruits.',function(){return S.gens.recruit},50),
+ A('c100',C_C,'Growing Clan','Own 100 clan members.',totalGens,100),
+ A('c500',C_C,'Great Clan','Own 500 clan members.',totalGens,500),
+ A('c1k',C_C,'Clan Army','Own 1,000 clan members.',totalGens,1e3),
+ A('c5k',C_C,'Hidden Village','Own 5,000 clan members.',totalGens,5e3),
+ A('all',C_C,'Every Path','Own at least 1 of every clan member.',function(){return GENS.filter(function(g){return S.gens[g.id]>0}).length},12),
+ A('void100',C_C,'Temple of Stars','Own 100 Void Temples.',function(){return S.gens.voidt},100),
+ A('bl1',C_B,'Awakened','Awaken a bloodline.',countBloods,1),
+ A('bl6',C_B,'Mixed Heritage','Awaken 6 bloodlines in one run.',countBloods,6),
+ A('bl12',C_B,'Twelve Bloods','Awaken 12 bloodlines in one run.',countBloods,12),
+ A('bl20',C_B,'Living Legend','Awaken 20 bloodlines in one run.',countBloods,20),
+ A('blall',C_B,'Pure Legend','Awaken every bloodline in one run.',countBloods,26),
+ A('asc1',C_R,'Ascended','Ascend once.',cAsc,1),
+ A('asc5',C_R,'Cycle of Rebirth','Ascend 5 times.',cAsc,5),
+ A('asc25',C_R,'Wheel Turner','Ascend 25 times.',cAsc,25),
+ A('asc100',C_R,'Hundredfold','Ascend 100 times.',cAsc,100),
+ A('asc250',C_R,'Eternal Return','Ascend 250 times.',cAsc,250),
+ A('asc1000',C_R,'Wheel of Ages','Ascend 1,000 times.',cAsc,1e3),
+ A('seal50',C_R,'Seal Keeper','Hold 50 Spirit Seals.',function(){return S.sealsTotal},50),
+ A('speed',C_R,'Speedrunner','Ascend from a run that lasted under 2 minutes.',function(){return S.fastRun>0&&S.fastRun<120?1:0},1),
+ A('shop1',C_S,'Window Shopper','Buy a Rebirth Shop tier.',shopTiers,1),
+ A('shop50',C_S,'Big Spender','Own 50 Rebirth Shop tiers.',shopTiers,50),
+ A('shop150',C_S,'Collector','Own 150 Rebirth Shop tiers.',shopTiers,150),
+ A('click1k',C_S,'Machine Spirit','Reach 1,000 auto-taps per second.',autoTps,1e3),
+ A('beast1',C_BE,'Spirit Bond','Summon a spirit beast.',beastCount,1),
+ A('beast3',C_BE,'Pack Leader','Summon 3 spirit beasts.',beastCount,3),
+ A('beast9',C_BE,'Nine Tails Assembled','Summon all nine spirit beasts.',beastCount,9),
+ A('blv100',C_BE,'Beast Whisperer','Raise a spirit beast to level 100.',maxBeastLv,100),
+ A('god1',C_G,'Godhood','God Rebirth once.',cGod,1),
+ A('god3',C_G,'Pantheon','God Rebirth 3 times.',cGod,3),
+ A('god10',C_G,'Elder God','God Rebirth 10 times.',cGod,10),
+ A('abil5',C_G,'Divine Arsenal','Own 5 God Abilities.',function(){return ABIL.filter(function(a){return S.abil[a.id]>0}).length},5),
+ A('use1',C_G,'First Miracle','Use an active God Ability.',function(){return S.abilUses},1),
+ A('use100',C_G,'Miracle Worker','Use active God Abilities 100 times.',function(){return S.abilUses},100),
+ A('fox1',C_F,'Fox Friend','Catch a spirit fox.',cFox,1),
+ A('fox25',C_F,'Fox Whisperer','Catch 25 spirit foxes.',cFox,25),
+ A('fox100',C_F,'Shrine Keeper','Catch 100 spirit foxes.',cFox,100),
+ A('fox500',C_F,'Kitsune Sage','Catch 500 spirit foxes.',cFox,500),
+ A('sixth1',C_F,'Born Different','Be born on the Sixth Path.',function(){return S.sixthLife},1),
+ A('sixth5',C_F,'Chosen Again','Be born on the Sixth Path 5 times.',function(){return S.sixthLife},5),
+ A('ev1',C_F,'Weather Watcher','Witness a random event.',function(){return S.evSeen},1),
+ A('away',C_F,'Rested','Come back to offline earnings.',function(){return S.offlineGot},1),
+ A('off8',C_F,'Deep Sleeper','Come back after 8+ hours away.',function(){return S.offMax},28800,false,'time'),
+ A('daily1',C_Q,'Gift Receiver','Claim a daily gift.',function(){return S.dTotal},1),
+ A('daily7',C_Q,'Seven Suns','Reach a 7-day login streak.',function(){return S.dBest},7),
+ A('q10',C_Q,'Errand Ninja','Complete 10 missions.',function(){return S.missionsDone},10),
+ A('q50',C_Q,'Mission Master','Complete 50 missions.',function(){return S.missionsDone},50),
+ A('tr1',C_Q,'Trial Victor','Win a Trial.',function(){return S.trWins},1),
+ A('tr10',C_Q,'Boss Breaker','Reach Trial level 10.',function(){return S.trLv},10),
+ A('exp1',C_Q,'Into the Wild','Finish an expedition.',function(){return S.expDone},1),
+ A('exp25',C_Q,'Cartographer','Finish 25 expeditions.',function(){return S.expDone},25),
+ A('tappers5',C_Q,'Tapper Squad','Recruit 5 Shadow Tappers.',function(){return S.tappers},5),
+ A('tal1',C_Q,'Talented','Learn a talent.',talOwned,1),
+ A('talall',C_Q,'Grandmaster','Learn every talent.',talOwned,15),
+ A('miss10',C_X,'The One That Got Away','Let 10 spirit foxes escape.',function(){return S.foxMiss},10,true),
+ A('second',C_X,'Second Thoughts','Open the reset screen, then change your mind.',function(){return S.resetCancel},1,true),
+ A('owl',C_X,'Night Owl','Play between 2 and 4 AM.',function(){return S.owl},1,true),
+ A('indec',C_X,'Indecisive','Change the number format 10 times.',function(){return S.nfT},10,true),
+ A('hib',C_X,'Hibernation','Come back after 24+ hours away.',function(){return S.offMax},86400,true,'time'),
+ A('masher',C_X,'Button Masher','Tap the orb 50 times within 10 seconds.',function(){return S.burst},1,true)
 ];
 var ACH_BONUS=0.02, SEAL_BONUS=0.10, SEAL_DIV=7.5e5, ASC_MIN=3e6, ASC_G=2, GOD_ASC=100, BASE_OFFLINE_H=2, MASTERY=0.03, DIV_BONUS=0.5, MAXN=1e300;
 function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
 var rng=(typeof window!=='undefined'&&typeof window.BD_SEED==='number')?mulberry32(window.BD_SEED):Math.random;
-var SIXTH_BASE=0.01,SIXTH_STEP=0.005,SIXTH_MULT=10;
+var SIXTH_BASE=0.01,SIXTH_STEP=0.005,SIXTH_MULT=10,SIXTH_CAP=0.075;
 function cl(x){return x>=MAXN?MAXN:(x>0?x:0)} // clamp: no Infinity / NaN / negatives ever reach the save
 
 /* ---------- STATE ---------- */
 function fresh(){
- var s={v:2,ki:0,run:0,life:0,taps:0,crits:0,foxes:0,asc:0,sealsTotal:0,sealsSpent:0,offlineGot:0,
-  gens:{},tech:{},bloods:{},perks:{},ach:{},sound:true,sci:false,buyQty:1,
+ var s={v:3,ki:0,run:0,life:0,taps:0,crits:0,foxes:0,asc:0,sealsTotal:0,sealsSpent:0,offlineGot:0,
+  gens:{},tech:{},bloods:{},perks:{},ach:{},sound:true,buyQty:1,
   started:Date.now(),runStart:Date.now(),played:0,lastSeen:Date.now(),frenzyUntil:0,best:0,
-  ascLife:0,god:0,divTotal:0,divSpent:0,beasts:{},abil:{},cd:{},stormUntil:0,rampUntil:0,autoAsc:false,autoPct:0,autoBuy:true,runT:0,sixth:0,sixthLife:0};
+  ascLife:0,god:0,divTotal:0,divSpent:0,beasts:{},abil:{},cd:{},stormUntil:0,rampUntil:0,autoAsc:false,autoPct:0,autoBuy:true,runT:0,sixth:0,sixthLife:0,
+  // v2.1
+  nf:0,vib:true,fx:true,events:true,mtaps:0,bought:0,bloodBuys:0,abilUses:0,foxMiss:0,offMax:0,fastRun:0,bestSeals:0,resetCancel:0,owl:0,nfT:0,burst:0,
+  dLast:'',dStreak:0,dBest:0,dTotal:0,q:[],qRr:0,missionsDone:0,trLv:0,trWins:0,trCd:0,exp:[],expDone:0,tappers:0,mp:0,mpSpent:0,mpTotal:0,tal:{},
+  surgeT:0,gloryT:0,evId:'',evT:0,evNext:600,evSeen:0,skin:'ember',tut:0,tipsOff:false};
  GENS.forEach(function(g){s.gens[g.id]=0});TECHS.forEach(function(t){s.tech[t.id]=0});PERKS.forEach(function(p){s.perks[p.id]=0});
- BEASTS.forEach(function(b){s.beasts[b.id]=0});ABIL.forEach(function(a){s.abil[a.id]=0});
+ BEASTS.forEach(function(b){s.beasts[b.id]=0});ABIL.forEach(function(a){s.abil[a.id]=0});TAL.forEach(function(t){s.tal[t.id]=0});
  return s;
 }
 var S=fresh();
@@ -315,13 +517,14 @@ function fmt(n){
  if(n<0)return '-'+fmt(-n);
  if(n<1000){return (n<100&&n%1>0.0001&&n<10)?n.toFixed(1):Math.floor(n).toString();}
  var e=Math.floor(Math.log10(n)/3);
- if(S.sci||e>=SUF.length){return n.toExponential(2).replace('e+','e');}
+ if(S.nf===1||e>=SUF.length){return n.toExponential(2).replace('e+','e');}
  var v=n/Math.pow(1000,e);
+ if(S.nf===2){if(v>=999.995){v/=1000;e++}return (v<10?v.toFixed(2):v<100?v.toFixed(1):Math.floor(v).toString())+'e'+(3*e)}
  var t=v<10?v.toFixed(2):v<100?v.toFixed(1):Math.floor(v).toString();
  if(parseFloat(t)>=1000&&e+1<SUF.length){return '1.00'+SUF[e+1];}
  return t+SUF[e];
 }
-function fmtTime(sec){sec=Math.floor(sec);var h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;return h?h+'h '+m+'m':m?m+'m '+s+'s':s+'s'}
+function fmtTime(sec){sec=Math.max(0,Math.floor(sec));var h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;return h?h+'h '+m+'m':m?m+'m '+s+'s':s+'s'}
 
 /* ---------- MATH ---------- */
 function totalGens(){var t=0;for(var k in S.gens)t+=S.gens[k];return t}
@@ -336,12 +539,15 @@ function bloodOpen(b){var r=b.req;if(!r)return true;if(r.asc&&S.ascLife<r.asc)re
 function reqText(b){var r=b.req;return r.god?'God Rebirth '+r.god+'×':'Ascend '+r.asc+'× total'}
 function mileMult(n){var m=1;for(var i=0;i<MILES.length;i++)if(n>=MILES[i])m*=2;return m}
 function nextMile(n){for(var i=0;i<MILES.length;i++)if(n<MILES[i])return MILES[i];return 0}
+function T(id){return S.tal[id]?1:0}
 function sealMult(){return 1+SEAL_BONUS*S.sealsTotal}
 function achMult(){return 1+ACH_BONUS*countAch()}
-function masteryMult(){return 1+MASTERY*S.ascLife}
+function masteryRate(){return MASTERY+0.01*(S.perks.scroll||0)}
+function masteryMult(){return 1+masteryRate()*S.ascLife}
 function divAvail(){return S.divTotal-S.divSpent}
 function divMult(){return 1+DIV_BONUS*S.divTotal}
-function globalMult(){return cl(bloodMult('all')*sealMult()*achMult()*(1+0.25*S.tech.drill)*masteryMult()*divMult()*Math.pow(1.5,S.perks.kimult)*sixthMult())}
+function talAll(){return T('s5')?5:1}
+function globalMult(){return cl(bloodMult('all')*sealMult()*achMult()*(1+0.25*S.tech.drill)*masteryMult()*divMult()*Math.pow(1.5,S.perks.kimult)*sixthMult()*talAll())}
 function sixthMult(){return S.sixth?SIXTH_MULT:1}
 function sixthChance(){return sixthChanceAt(S.perks.sixc||0)}
 // Sixth Path: rare roll at the start of every run; x10 production for that run only
@@ -350,83 +556,110 @@ function frenzyX(){return bloodMax('frz',5)}
 function frenzy(){return Date.now()<S.frenzyUntil?frenzyX():1}
 function stormX(){return Date.now()<S.stormUntil?100:1}
 function rampX(){return Date.now()<S.rampUntil?10:1}
-function genRate(g){return cl(g.rate*mileMult(S.gens[g.id])*genBloodMult(g.id)*globalMult())} // per unit
+function evX(id){return S.evT>0&&S.evId===id}
+function surgeX(){return S.surgeT>0?2:1}
+function gloryX(){return S.gloryT>0?3:1}
+function buffX(){return frenzy()*surgeX()*gloryX()*(evX('moon')?3:1)} // temporary buffs (not applied offline)
+function clanTal(){return (T('c1')?2:1)*(T('c5')?10:1)}
+function genRate(g){return cl(g.rate*mileMult(S.gens[g.id])*genBloodMult(g.id)*globalMult()*clanTal())} // per unit
 /* spirit beasts: unlocked by lifetime Ascensions, levels persist through Ascension */
 function beastOpen(b){return S.ascLife>=b.at}
 function beastLv(b){return S.beasts[b.id]||0}
 function beastCount(){var c=0;BEASTS.forEach(function(b){if(beastLv(b)>0)c++});return c}
-function beastMult(){return bloodMult('beast')*Math.pow(3,S.abil.bascend||0)}
+function maxBeastLv(){var m=0;BEASTS.forEach(function(b){if(beastLv(b)>m)m=beastLv(b)});return m}
+function beastMult(){return bloodMult('beast')*Math.pow(3,S.abil.bascend||0)*Math.pow(2,S.perks.totem||0)*(T('s5')?5:1)}
 function beastCost(b){return cl(BEAST_C0*Math.pow(BEAST_CS,b.tails-1)*Math.pow(BEAST_G,beastLv(b)))}
 function beastRate(b){var L=beastLv(b);if(!L)return 0;return cl(BEAST_R0*Math.pow(BEAST_RS,b.tails-1)*L*Math.pow(2,Math.floor(L/BEAST_MILE))*beastMult()*globalMult()*rampX())}
 function beastKps(){var t=0;BEASTS.forEach(function(b){t+=beastRate(b)});return cl(t)}
 function clanKps(){var t=0;GENS.forEach(function(g){t+=S.gens[g.id]*genRate(g)});return cl(t)}
 function baseKps(){return cl(clanKps()+beastKps())}
-function kps(){return cl(baseKps()*frenzy())}
+function kps(){return cl(baseKps()*buffX())}
+function tapMult(){return Math.pow(3,S.perks.tapx||0)*(T('t1')?2:1)*(T('t5')?10:1)*(evX('rain')?5:1)}
 function tapValue(){
  var f=S.tech.focus;
- var v=(1+f)*Math.pow(2,Math.floor(f/25))*bloodMult('tap')*sealMult()*achMult()*masteryMult()*divMult()*Math.pow(1.5,S.perks.kimult)*sixthMult()+kps()*(0.01*S.tech.flow+bloodSum('tapK'))+beastKps()*0.02*beastCount();
+ var v=(1+f)*Math.pow(2,Math.floor(f/25))*bloodMult('tap')*sealMult()*achMult()*masteryMult()*divMult()*Math.pow(1.5,S.perks.kimult)*sixthMult()*talAll()*tapMult()+kps()*(0.01*S.tech.flow+bloodSum('tapK'))+beastKps()*0.02*beastCount();
  return cl(v*stormX());
 }
-function gBase(g){return g.base*(1-0.05*S.perks.thrift)}
+function critChance(){return (has('crit')?0.10:0)+(T('t3')?0.05:0)}
+function gBase(g){return g.base*(1-thriftPct(S.perks.thrift)/100)*(T('c2')?0.9:1)}
 function genCost(g,n,k){var c=gBase(g)*Math.pow(GROWTH,n);return c*(Math.pow(GROWTH,k)-1)/(GROWTH-1)}
 function genMaxAfford(g){var n=S.gens[g.id],c=gBase(g)*Math.pow(GROWTH,n);if(!isFinite(c))return 0;var k=Math.floor(Math.log(S.ki*(GROWTH-1)/c+1)/Math.log(GROWTH));while(k>0&&genCost(g,n,k)>S.ki)k--;return Math.max(0,k)}
 function bloodCost(b){return b.cost*(1-0.1*S.perks.memory)}
-function sealGainMult(){return (1+0.25*S.perks.reson)*(1+0.5*(S.abil.font||0))*bloodMult('seal')}
+function sealGainMult(){return (1+0.25*S.perks.reson)*(1+0.5*(S.abil.font||0))*bloodMult('seal')*(T('s2')?1.25:1)}
 function ascMin(){return cl(ASC_MIN*Math.pow(ASC_G,S.asc))} // first rebirth at 3M Ki, doubling with each Ascension in this God cycle
 var SWIFT=[420,360,300,270,240,210,180,150];
 function minRun(){return SWIFT[Math.min(S.perks.swift,SWIFT.length-1)]*Math.pow(0.75,S.abil.dilate||0)} // seconds a run must last before it can Ascend
 function runWait(){return Math.max(0,minRun()-S.runT)}
-function sealsOnAscend(){return (S.run<ascMin()||S.runT<minRun())?0:Math.floor(cl(Math.sqrt(S.run/SEAL_DIV)*sealGainMult()))}
-function divOnGod(){return S.asc<GOD_ASC?0:Math.floor(cl(10*Math.pow(1.05,S.asc-GOD_ASC)))} // 10 Divinity at 100 Ascensions, +5% per extra one
+function sealsPotential(){return Math.floor(cl(Math.sqrt(S.run/SEAL_DIV)*sealGainMult()))}
+function sealsOnAscend(){return (S.run<ascMin()||S.runT<minRun())?0:sealsPotential()}
+function divOnGod(){return S.asc<GOD_ASC?0:Math.floor(cl(10*Math.pow(1.05,S.asc-GOD_ASC)*(1+0.05*(S.perks.ladder||0))))} // 10 Divinity at 100 Ascensions, +5% per extra one
 function sealsAvail(){return S.sealsTotal-S.sealsSpent}
-function offlineCapH(){return BASE_OFFLINE_H+2*S.perks.deep+(has('offline')?4:0)+bloodSum('offH')}
-function offlineRate(){return ((has('offline')?1:0.5)+0.1*S.perks.offrate)*bloodMult('offX')}
-
+function offlineCapH(){return BASE_OFFLINE_H+2*S.perks.deep+(has('offline')?4:0)+bloodSum('offH')+(T('s4')?4:0)}
+function offlineRate(){return ((has('offline')?1:0.5)+0.1*S.perks.offrate+(T('s4')?0.25:0))*bloodMult('offX')}
+function shopTiers(){var t=0;PERKS.forEach(function(p){t+=S.perks[p.id]||0});return t}
+function autoTps(){return clickTps(S.perks.echo)+TAPPER_TPS*S.tappers}
+function echoMult(){return bloodMult('echo')*(T('t4')?3:1)*(evX('tide')?3:1)}
+function addSeals(n){if(n>0)S.sealsTotal=cl(S.sealsTotal+n)}
 function earn(x){if(!(x>0))return;S.ki=cl(S.ki+x);S.run=cl(S.run+x);S.life=cl(S.life+x)}
 
+/* multi-buy planner: k levels starting at level l. q = 1/10/25 or 'max' */
+function planLv(l,max,cost,budget,q){if(l>=max)return {k:0,c:0,ok:false,maxed:true};var k=0,c=0;
+ if(q==='max'){while(l+k<max&&k<1000){var n=cost(l+k);if(!(c+n<=budget))break;c+=n;k++}return k?{k:k,c:c,ok:true}:{k:1,c:cost(l),ok:false}}
+ q=Math.max(1,Math.floor(+q)||1);for(;k<q&&l+k<max;k++)c+=cost(l+k);c=cl(c);return {k:k,c:c,ok:c<=budget}}
+function beastPlan(b,q){var c0=beastCost(b),G=BEAST_G;if(!(c0<MAXN))return {k:1,c:c0,ok:false};
+ var k=q==='max'?Math.floor(Math.log(S.ki*(G-1)/c0+1)/Math.log(G)):Math.max(1,Math.floor(+q)||1);if(!(k>=1))return {k:1,c:c0,ok:false};
+ k=Math.min(k,100000);var c=cl(c0*(Math.pow(G,k)-1)/(G-1));if(q==='max'){while(k>1&&!(c<=S.ki)){k--;c=cl(c0*(Math.pow(G,k)-1)/(G-1))}}return {k:k,c:c,ok:c<=S.ki&&c<MAXN}}
+
 /* ---------- ACTIONS ---------- */
-function tap(x,y,echo){
+var tq=[];
+function tap(x,y){
  var v=tapValue(),crit=false;
- if(echo)v*=bloodMult('echo');
- if(has('crit')&&Math.random()<0.10){v*=bloodMax('critX',10);crit=true;S.crits++}
- v=cl(v);earn(v);S.taps++;
- if(x!=null){floatNum(x,y,'+'+fmt(v),crit);sparks(x,y,crit?10:5);snd(crit?'crit':'tap')}
+ if(Math.random()<critChance()){v*=bloodMax('critX',10);crit=true;S.crits++}
+ v=cl(v);earn(v);S.taps++;S.mtaps++;
+ var now=Date.now();tq.push(now);if(tq.length>50)tq.shift();if(!S.burst&&tq.length>=50&&now-tq[0]<10000)S.burst=1;
+ if(TR.on)trialHit(v);
+ if(x!=null){floatNum(x,y,'+'+fmt(v),crit);sparks(x,y,crit?8:4);snd(crit?'crit':'tap')}
  return v;
 }
 function buyGen(id,qty,quiet){
  var g=GENS.find(function(x){return x.id===id});if(!g)return false;
- var k=qty==='max'?genMaxAfford(g):qty;if(k<1)return false;
+ var k=qty==='max'?genMaxAfford(g):Math.floor(+qty)||0;if(k<1)return false;
  var c=genCost(g,S.gens[id],k);if(!isFinite(c)||!(c<=S.ki*(1+1e-12)+1e-9))return false;
  var before=nextMile(S.gens[id]);
- S.ki=cl(S.ki-c);S.gens[id]+=k;
- if(!quiet&&before&&S.gens[id]>=before)toast('⚡ '+g.name+' milestone! Production ×2');
+ S.ki=cl(S.ki-c);S.gens[id]+=k;S.bought+=k;
+ if(!quiet&&before&&S.gens[id]>=before)toast('⚡ '+g.name+' milestone! Production ×2','mile');
  return true;
 }
-function buyTech(id){var t=TECHS.find(function(x){return x.id===id});var l=S.tech[id];if(l>=t.max)return false;var c=t.cost(l);if(c>S.ki)return false;S.ki=cl(S.ki-c);S.tech[id]++;return true}
-function buyBlood(id,quiet){var b=BLOODS.find(function(x){return x.id===id});if(!b||S.bloods[id]||!bloodOpen(b))return false;var c=bloodCost(b);if(c>S.ki)return false;S.ki=cl(S.ki-c);S.bloods[id]=1;if(!quiet)toast(b.ic+' '+b.name+' awakened!');return true}
-function buyPerk(id){var p=PERKS.find(function(x){return x.id===id});var l=S.perks[id];if(l>=p.max)return false;var c=p.cost(l);if(c>sealsAvail())return false;S.sealsSpent+=c;S.perks[id]++;return true}
-function autoTaps(n){ // Auto Clicker: n taps in one batch (keeps 300 taps/sec cheap on phones)
- var v=tapValue()*bloodMult('echo'),p=0,x=bloodMax('critX',10);
- if(has('crit'))p+=0.10;p+=0.10*S.perks.critc;p=Math.min(p,1);
+function buyTech(id,q){var t=TECHS.find(function(x){return x.id===id});if(!t)return false;var p=planLv(S.tech[id],t.max,t.cost,S.ki,q||1);if(!p.ok)return false;S.ki=cl(S.ki-p.c);S.tech[id]+=p.k;return true}
+function buyBlood(id,quiet){var b=BLOODS.find(function(x){return x.id===id});if(!b||S.bloods[id]||!bloodOpen(b))return false;var c=bloodCost(b);if(c>S.ki)return false;S.ki=cl(S.ki-c);S.bloods[id]=1;S.bloodBuys++;if(!quiet)toast(b.ic+' '+b.name+' awakened!');return true}
+function bloodPlan(){var list=BLOODS.filter(function(b){return !S.bloods[b.id]&&bloodOpen(b)}).sort(function(a,b){return a.cost-b.cost}),c=0,n=0;for(var i=0;i<list.length;i++){var x=bloodCost(list[i]);if(c+x>S.ki)break;c+=x;n++}return {n:n,c:c,list:list.slice(0,n)}}
+function buyAllBlood(){var p=bloodPlan(),n=0;p.list.forEach(function(b){if(buyBlood(b.id,true))n++});return n}
+function buyPerk(id,q){var p=PERKS.find(function(x){return x.id===id});if(!p)return false;var pl=planLv(S.perks[id],p.max,p.cost,sealsAvail(),q||1);if(!pl.ok)return false;S.sealsSpent+=pl.c;S.perks[id]+=pl.k;return pl.k}
+function autoTaps(n){ // Auto Clicker: n taps in one batch (keeps thousands of taps/sec cheap on phones)
+ var v=tapValue()*echoMult(),p=Math.min(1,critChance()+0.10*S.perks.critc),x=bloodMax('critX',10);
  var c=0;if(p>0){if(n<=20){for(var i=0;i<n;i++)if(Math.random()<p)c++}else{c=Math.floor(n*p);if(Math.random()<n*p-c)c++}}
  earn(cl(v*(n+c*(x-1))));S.taps+=n;S.crits+=c;return c}
-function buyBeast(id,quiet){var b=BEASTS.find(function(x){return x.id===id});if(!b||!beastOpen(b))return false;var c=beastCost(b);if(!(c<=S.ki))return false;
- var first=!beastLv(b);S.ki=cl(S.ki-c);S.beasts[id]=beastLv(b)+1;if(first&&!quiet){summonFx(b);snd('asc')}if(first)checkAch();return true}
+function buyBeast(id,quiet,q){var b=BEASTS.find(function(x){return x.id===id});if(!b||!beastOpen(b))return false;var p=beastPlan(b,q||1);if(!p.ok)return false;
+ var first=!beastLv(b);S.ki=cl(S.ki-p.c);S.beasts[id]=beastLv(b)+p.k;if(first&&!quiet){summonFx(b);snd('asc')}if(first)checkAch();return true}
 function legacyKeep(){var n=6*(S.abil.legacy||0)+S.perks.keep,out=[];for(var i=0;i<BLOODS.length&&out.length<n;i++){if(bloodOpen(BLOODS[i]))out.push(BLOODS[i].id)}return out}
 function ascend(){
  var g=sealsOnAscend();if(g<1)return false;
- var opened=BEASTS.filter(beastOpen).length;
+ var opened=BEASTS.filter(beastOpen).length,first=S.ascLife===0;
+ S.fastRun=S.fastRun>0?Math.min(S.fastRun,S.runT):S.runT;if(g>S.bestSeals)S.bestSeals=g;
  S.sealsTotal=cl(S.sealsTotal+g);S.asc++;S.ascLife++;
  S.ki=startKi(S.perks.start);S.run=0;S.frenzyUntil=0;S.runStart=Date.now();S.runT=0;
  GENS.forEach(function(x){S.gens[x.id]=0});TECHS.forEach(function(t){S.tech[t.id]=0});
  var nb={};legacyKeep().forEach(function(id){if(S.bloods[id])nb[id]=1});S.bloods=nb;
  rollSixth();
  var nowOpen=BEASTS.filter(beastOpen);if(nowOpen.length>opened){var nbst=nowOpen[nowOpen.length-1];toast(nbst.ic+' '+nbst.name+' stirs! Summon it in the Beasts tab.')}
+ if(first)toast('⚔️ Trials unlocked! Find them in Quests.');
  checkAch();save();return g;
 }
 function autoAscOn(){return S.perks.cycle>0||S.abil.eternal>0}
 function autoAscReady(){var g=sealsOnAscend();return g>=1&&g>=S.sealsTotal*S.autoPct/100}
-function tryAutoAsc(){if(!(autoAscOn()&&S.autoAsc&&autoAscReady()))return 0;var got=ascend();if(got){toast('♻️ Auto-Ascended · +'+fmt(got)+' Seals');if(typeof tab!=='undefined'&&(tab==='ascend'||tab==='blood'||tab==='beast'||tab==='tech'))buildPanel()}return got}
+var aaAgg={n:0,s:0,at:0};
+function tryAutoAsc(){if(!(autoAscOn()&&S.autoAsc&&autoAscReady()))return 0;var got=ascend();if(got){var now=Date.now();if(now-aaAgg.at>6000){aaAgg.n=0;aaAgg.s=0}aaAgg.n++;aaAgg.s+=got;aaAgg.at=now;
+ toast('♻️ Auto-Ascended'+(aaAgg.n>1?' ×'+aaAgg.n:'')+' · +'+fmt(aaAgg.s)+' Seals','aa');if(typeof tab!=='undefined'&&tab!=='more'&&tab!=='quest')buildPanel()}return got}
 function godReady(){return divOnGod()>=1}
 function godRebirth(){
  var d=divOnGod();if(d<1)return false;
@@ -444,12 +677,12 @@ function buyAbil(id){var a=ABIL.find(function(x){return x.id===id});if(!a)return
 function abilReadyIn(id){return Math.max(0,((S.cd[id]||0)-Date.now())/1000)}
 function useAbil(id){var a=ABIL.find(function(x){return x.id===id});if(!a||!a.act||!S.abil[id])return false;if(abilReadyIn(id)>0)return false;
  if(id==='rampage'&&!beastCount())return false;
- var now=Date.now();S.cd[id]=now+a.cd*1000;
- if(id==='skip'){var amt=cl(baseKps()*skipH(S.abil.skip)*3600);earn(amt);toast('⏳ Time Skip! +'+fmt(amt)+' Ki ('+skipH(S.abil.skip)+'h)');return amt||true}
+ var now=Date.now();S.cd[id]=now+a.cd*1000;S.abilUses++;
+ if(id==='skip'){var amt=cl(baseKps()*skipH(S.abil.skip)*3600);earn(amt);toast('⏳ Time Skip! +'+fmt(amt)+' Ki ('+skipH(S.abil.skip)+'h)');checkAch();return amt||true}
  if(id==='storm'){S.stormUntil=now+30000;toast('🌩️ Divine Storm! Taps ×100 for 30s')}
  if(id==='swarm'){spawnSwarm(7);toast('🦊 Fox Swarm!')}
  if(id==='rampage'){S.rampUntil=now+60000;toast('🌀 Beast Rampage! Beasts ×10 for 60s')}
- save();return true}
+ checkAch();save();return true}
 function genOpen(i){return i===0||S.gens[GENS[i-1].id]>0||S.gens[GENS[i].id]>0}
 /* Phantom Steward: lv1 clan, lv2 +training, lv3 +bloodlines & beast levels */
 function autoBuy(lv){
@@ -462,19 +695,123 @@ function autoBuy(lv){
   buyGen(best.g.id,best.c*1000<S.ki?10:1,true)}
 }
 
+/* ---------- TALENTS (permanent; bought with Mastery Points) ---------- */
+function talOwned(){var c=0;TAL.forEach(function(t){if(S.tal[t.id])c++});return c}
+function mpAvail(){return S.mp-S.mpSpent}
+function talPrev(t){var i=TAL.indexOf(t);return i%5?TAL[i-1]:null}
+function talOpen(t){var p=talPrev(t);return !p||!!S.tal[p.id]}
+function buyTal(id){var t=TAL.find(function(x){return x.id===id});if(!t||S.tal[id]||!talOpen(t)||t.cost>mpAvail())return false;S.mpSpent+=t.cost;S.tal[id]=1;checkAch();return true}
+function respec(){if(!talOwned())return false;TAL.forEach(function(t){S.tal[t.id]=0});S.mpSpent=0;return true}
+function gainMp(n){if(n>0){S.mp+=n;S.mpTotal+=n}}
+
+/* ---------- TRIALS (boss tap-battles; unlock after the first Ascension) ---------- */
+var TR={on:false,lv:0,hp:0,max:0,t:0};
+function trialOpen(){return S.ascLife>=1}
+function trialBoss(lv){return BOSSES[lv%BOSSES.length]}
+function trialTaps(lv){return 40+12*lv} // manual taps needed at your current tap power
+function trialBase(){return Math.max(1,tapValue()/stormX()*(1+critChance()*(bloodMax('critX',10)-1)))} // expected damage per tap incl. crits, so crits only add luck
+function trialMp(lv){return 1+Math.floor(lv/4)}
+function trialSeals(){return Math.max(1,Math.floor(S.sealsTotal*0.02))}
+function trialStart(){if(!trialOpen()||TR.on||S.trCd>0)return false;var lv=S.trLv,mx=cl(trialBase()*trialTaps(lv));TR={on:true,lv:lv,max:mx,hp:mx,t:TRIAL_T};return true}
+function trialHit(v){if(!TR.on)return;TR.hp=Math.max(0,TR.hp-v*(T('t2')?1.5:1));if(TR.hp<=0)trialEnd(true)}
+function trialEnd(win){if(!TR.on)return false;TR.on=false;var b=trialBoss(TR.lv);
+ if(win){var mp=trialMp(TR.lv),sl=trialSeals();gainMp(mp);addSeals(sl);S.gloryT=Math.min(S.gloryT+300,900);S.trWins++;S.trLv++;S.trCd=TRIAL_CD_WIN;
+  toast('⚔️ '+b[1]+' defeated! +'+mp+' Mastery · +'+fmt(sl)+' Seals · Ki ×3 for 5m');if(typeof document!=='undefined'&&$('fx')){bigFx(b[0],b[2],'Victory!<small>'+b[1]+' falls · +'+mp+' Mastery Point'+(mp>1?'s':'')+'</small>');snd('asc')}}
+ else{S.trCd=TRIAL_CD_LOSE;toast('💨 '+b[1]+' survived. Train up and try again!')}
+ checkAch();if(typeof tab!=='undefined'&&tab==='quest')buildPanel();return win}
+
+/* ---------- EXPEDITIONS (timers run in game time, including offline) ---------- */
+function expSlots(){return 1+T('c3')}
+function expSquad(){return Math.max(1,Math.floor(totalGens()*0.1))}
+function expMult(){return T('c4')?2:1}
+function expPreview(d){var e=EXPD[d],m=expMult();return {ki:cl(baseKps()*e.s*e.k*m),sl:S.ascLife>=1?Math.max(1,Math.floor(S.sealsTotal*e.sl*m)):0}}
+function expCanSend(){return S.exp.length<expSlots()&&totalGens()>=EXP_MIN}
+function expSend(d){var e=EXPD[d];if(!e||!expCanSend())return false;var pv=expPreview(d);S.exp.push({d:d,left:e.s,ki:pv.ki,sl:pv.sl,n:expSquad()});return true}
+function expClaim(i){var x=S.exp[i];if(!x||x.left>0)return false;var e=EXPD[x.d],out={ki:x.ki,sl:x.sl,tap:false,mp:0};
+ earn(x.ki);addSeals(x.sl);
+ if(S.tappers<MAX_TAPPERS&&rng()<e.tp){S.tappers++;out.tap=true}
+ if(e.mp&&rng()<e.mp){gainMp(1);out.mp=1}
+ S.exp.splice(i,1);S.expDone++;checkAch();return out}
+
+/* ---------- MISSIONS (3 rotating short goals) ---------- */
+var QT={
+ tap:{ic:'👊',d:function(n){return 'Tap the orb '+comma(n)+' times'},cur:function(){return S.mtaps},n:function(){return 150+50*Math.floor(rng()*6)},ok:function(){return true}},
+ clan:{ic:'🥷',d:function(n){return 'Recruit '+n+' clan members'},cur:function(){return S.bought},n:function(){return 25+25*Math.floor(rng()*4)},ok:function(){return true}},
+ fox:{ic:'🦊',d:function(n){return 'Catch '+n+' spirit foxes'},cur:function(){return S.foxes},n:function(){return 2+Math.floor(rng()*2)},ok:function(){return true}},
+ ki:{ic:'💰',d:function(n){return 'Earn '+fmt(n)+' Ki'},cur:function(){return S.life},n:function(){return Math.ceil(Math.max(5000,baseKps()*300))},ok:function(){return S.life<1e290}},
+ blood:{ic:'🩸',d:function(n){return 'Awaken '+n+' bloodlines'},cur:function(){return S.bloodBuys},n:function(){return 2+Math.floor(rng()*3)},ok:function(){return S.ascLife>=1||S.life>=500}},
+ asc:{ic:'🔮',d:function(n){return 'Ascend '+n+' times'},cur:function(){return S.ascLife},n:function(){return 2+Math.floor(rng()*3)},ok:function(){return S.ascLife>=1}},
+ trial:{ic:'⚔️',d:function(n){return 'Win a Trial'},cur:function(){return S.trWins},n:function(){return 1},ok:trialOpen},
+ abil:{ic:'✴️',d:function(n){return 'Use God Abilities '+n+' times'},cur:function(){return S.abilUses},n:function(){return 2},ok:function(){return ABIL.some(function(a){return a.act&&S.abil[a.id]})}}
+};
+function qLore(){return T('s3')?2:1}
+function genQ(){var used={};S.q.forEach(function(q){if(q&&q.t)used[q.t]=1});
+ var types=Object.keys(QT).filter(function(t){return !used[t]&&QT[t].ok()});if(!types.length)types=['tap'];
+ var t=types[Math.floor(rng()*types.length)%types.length],r=rng(),rw;
+ if(S.ascLife>=1&&r<0.1)rw='mp';else if(S.ascLife>=1&&r<0.45)rw='seals';else if(r<0.75)rw='surge';else rw='ki';
+ return {t:t,b:QT[t].cur(),n:QT[t].n(),rw:rw}}
+function fillQ(){while(S.q.length<3)S.q.push({cd:0});for(var i=0;i<3;i++){var q=S.q[i];if(!q.t&&!(q.cd>0))S.q[i]=genQ()}}
+function qProg(q){return q&&q.t?Math.max(0,QT[q.t].cur()-q.b):0}
+function qDone(q){return !!(q&&q.t)&&qProg(q)>=q.n}
+function qRewardText(q){var m=qLore();if(q.rw==='mp')return '+'+m+' Mastery Point'+(m>1?'s':'');if(q.rw==='seals')return '+'+fmt(qSeals())+' Seals';if(q.rw==='surge')return 'Ki ×2 for '+(2*m)+'m';return '+'+fmt(qKi())+' Ki'}
+function qSeals(){return Math.max(1,Math.floor(S.sealsTotal*0.03))*qLore()}
+function qKi(){return cl(Math.max(1000,baseKps()*180)*qLore())}
+function claimQ(i){var q=S.q[i];if(!qDone(q))return false;var m=qLore();
+ if(q.rw==='mp')gainMp(m);else if(q.rw==='seals')addSeals(qSeals());else if(q.rw==='surge')S.surgeT=Math.min(S.surgeT+120*m,1800);else earn(qKi());
+ var txt=qRewardText(q);S.q[i]={cd:Q_REFRESH};S.missionsDone++;checkAch();return txt}
+function rerollQ(i){var q=S.q[i];if(!q||!q.t||S.qRr>0||qDone(q))return false;S.q[i]={cd:0};S.q[i]=genQ();S.qRr=Q_REROLL;return true}
+
+/* ---------- DAILY GIFT (local calendar date; 7-day cycle; a missed day resets the streak) ---------- */
+function pad2(n){return (n<10?'0':'')+n}
+function dayKey(d){d=d||new Date();return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate())}
+function dayNum(k){var p=k.split('-');return Math.round(new Date(+p[0],+p[1]-1,+p[2]).getTime()/864e5)}
+function dailyGap(){return S.dLast?dayNum(dayKey())-dayNum(S.dLast):Infinity}
+function dailyReady(){return dailyGap()>0}
+function dailyNextStreak(){var g=dailyGap();return g===1?S.dStreak+1:g<=0?S.dStreak:1}
+function cycDay(st){return ((Math.max(1,st)-1)%7)+1}
+function dailyReward(day){var r=DAILY[day-1];return {ki:cl(Math.max(baseKps()*r.h*3600,100*day*day)),surge:r.surge||0,mp:r.mp||0,sl:r.sl&&S.ascLife>=1?Math.max(1,Math.floor(S.sealsTotal*r.sl)):0}}
+function dailyText(r){return '+'+fmt(r.ki)+' Ki'+(r.surge?' · Ki ×2 for '+(r.surge/60)+'m':'')+(r.mp?' · +'+r.mp+' Mastery':'')+(r.sl?' · +'+fmt(r.sl)+' Seals':'')}
+function claimDaily(){if(!dailyReady())return false;var st=dailyNextStreak(),day=cycDay(st),r=dailyReward(day);
+ earn(r.ki);if(r.surge)S.surgeT=Math.min(S.surgeT+r.surge,1800);gainMp(r.mp);addSeals(r.sl);
+ S.dStreak=st;S.dBest=Math.max(S.dBest,st);S.dLast=dayKey();S.dTotal++;checkAch();save();return {day:day,r:r,streak:st}}
+function secsToMidnight(){var n=new Date();return (new Date(n.getFullYear(),n.getMonth(),n.getDate()+1)-n)/1000}
+
+/* ---------- RANDOM EVENTS ---------- */
+function evCur(){if(!(S.evT>0))return null;for(var i=0;i<EVENTS.length;i++)if(EVENTS[i].id===S.evId)return EVENTS[i];return null}
+function evStart(id){var e=null;for(var i=0;i<EVENTS.length;i++)if(EVENTS[i].id===id)e=EVENTS[i];if(!e)e=EVENTS[Math.floor(rng()*EVENTS.length)%EVENTS.length];
+ S.evId=e.id;S.evT=e.t;S.evSeen++;S.evNext=EV_GAP+rng()*EV_GAP;toast(e.ic+' '+e.name+'! '+e.d+' for '+fmtTime(e.t));if(e.id==='fest'&&typeof foxAt!=='undefined')foxAt=Math.min(foxAt||Infinity,Date.now()+1500);snd('fox');checkAch();return e}
+function evTick(dt){if(S.evT>0){S.evT-=dt;if(S.evT<=0){S.evT=0;S.evId=''}}else if(S.events){S.evNext-=dt;if(S.evNext<=0)evStart()}}
+
+/* ---------- SKINS ---------- */
+function skinOk(id){for(var i=0;i<SKINS.length;i++)if(SKINS[i].id===id)return SKINS[i].ok();return false}
+function setSkin(id){if(!skinOk(id))return false;S.skin=id;return true}
+
+/* ---------- TIPS (first-time tutorial) ---------- */
+function tipNow(){if(S.tipsOff)return null;while(S.tut<TIPS.length&&TIPS[S.tut].done())S.tut++;return S.tut<TIPS.length?TIPS[S.tut]:null}
+
+/* ---------- TIMERS (game-time seconds; also advanced by offline time) ---------- */
+function timers(dt,offline){
+ if(S.surgeT>0)S.surgeT=Math.max(0,S.surgeT-dt);if(S.gloryT>0)S.gloryT=Math.max(0,S.gloryT-dt);
+ if(S.trCd>0)S.trCd=Math.max(0,S.trCd-dt);if(S.qRr>0)S.qRr=Math.max(0,S.qRr-dt);
+ for(var i=0;i<S.q.length;i++){if(S.q[i].cd>0)S.q[i].cd=Math.max(0,S.q[i].cd-dt)}
+ var back=0;S.exp.forEach(function(x){if(x.left>0){x.left=Math.max(0,x.left-dt);if(!x.left)back++}});
+ if(offline){if(S.evT>0){S.evT=Math.max(0,S.evT-dt);if(!S.evT)S.evId=''}if(TR.on)trialEnd(false)}
+ else{evTick(dt);if(TR.on){TR.t-=dt;if(TR.t<=0)trialEnd(false)}}
+ return back}
+
 /* offline: returns amount */
 function applyOffline(sec,show){
  var cap=offlineCapH()*3600,use=Math.min(sec,cap);
- var amt=cl(baseKps()*use*offlineRate());S.runT+=sec;
- if(amt>0){earn(amt);S.offlineGot++;
-  if(show&&sec>=60)modal('<h2>🌙 Welcome back!</h2><p>You were away for <b>'+fmtTime(sec)+'</b>.</p><p>Your clan trained while you rested and gathered</p><p style="font-size:28px;font-weight:900;color:var(--acc2);text-align:center;margin:12px 0">+'+fmt(amt)+' Ki</p><p style="color:var(--mut);font-size:13px">Offline rate '+fmt(offlineRate()*100)+'% · limit '+offlineCapH()+'h'+(sec>cap?' (limit reached)':'')+'</p><button class="big" data-act="close">Collect</button>');
- }
+ var amt=cl(baseKps()*use*offlineRate());S.runT+=sec;S.offMax=Math.max(S.offMax,sec);
+ var back=timers(sec,true);
+ if(amt>0){earn(amt);S.offlineGot++;}
+ if(show&&sec>=60&&(amt>0||back))modalQ('<h2>🌙 Welcome back!</h2><p>You were away for <b>'+fmtTime(sec)+'</b>.</p>'+(amt>0?'<p>Your clan trained while you rested and gathered</p><p style="font-size:28px;font-weight:900;color:var(--acc2);text-align:center;margin:12px 0">+'+fmt(amt)+' Ki</p><p style="color:var(--mut);font-size:13px">Offline rate '+fmt(offlineRate()*100)+'% · limit '+offlineCapH()+'h'+(sec>cap?' (limit reached)':'')+'</p>':'')+(back?'<p>🧭 <b>'+back+' expedition'+(back>1?'s':'')+'</b> came back. Claim '+(back>1?'them':'it')+' in Quests › Expeditions.</p>':'')+'<button class="big" data-act="close">Collect</button>');
  return amt;
 }
 
 /* ---------- FOX ---------- */
 var foxAt=0,foxUntil=0;
-function foxInterval(){var m=(has('fox')?0.5:1)/(1+0.15*S.perks.lure)/bloodMult('foxF');return (70+Math.random()*110)*1000*m}
+function foxInterval(){if(evX('fest'))return (4+Math.random()*4)*1000;var m=(has('fox')?0.5:1)/(1+0.15*S.perks.lure)/bloodMult('foxF')/(T('s1')?1.25:1);return (70+Math.random()*110)*1000*m}
 function scheduleFox(){foxAt=Date.now()+foxInterval()}
 function foxPos(f){var z=$('tapZone');var w=z.clientWidth||300,h=z.clientHeight||200;
  var side=Math.random()<0.5;f.style.left=(side?58+Math.random()*Math.max(4,w*0.2-58):w*0.72+Math.random()*(w*0.2))+'px';f.style.top=(10+Math.random()*Math.max(10,h-84))+'px'}
@@ -482,34 +819,54 @@ function showFox(){var f=$('fox');foxPos(f);f.style.display='block';foxUntil=Dat
 function catchFox(swarm){
  if(!swarm){$('fox').style.display='none';foxUntil=0;scheduleFox()}S.foxes++;
  var dbl=has('fox')?2:1;
- if(Math.random()<0.5){var dur=20000*dbl*(has('frzT')?2:1);S.frenzyUntil=Math.max(S.frenzyUntil,Date.now())+(swarm&&Date.now()<S.frenzyUntil?dur/4:dur);toast('🦊 Fox Frenzy! Production ×'+frenzyX()+' for '+Math.round((S.frenzyUntil-Date.now())/1000)+'s');}
- else{var g=cl(Math.max(baseKps()*90,tapValue()*40,25)*dbl*bloodMult('foxR'));earn(g);toast('🦊 Fox Gift! +'+fmt(g)+' Ki');}
+ if(Math.random()<0.5){var dur=20000*dbl*(has('frzT')?2:1);S.frenzyUntil=Math.max(S.frenzyUntil,Date.now())+(swarm&&Date.now()<S.frenzyUntil?dur/4:dur);toast('🦊 Fox Frenzy! Production ×'+frenzyX()+' for '+Math.round((S.frenzyUntil-Date.now())/1000)+'s','fox');}
+ else{var g=cl(Math.max(baseKps()*90,tapValue()*40,25)*dbl*bloodMult('foxR'));earn(g);toast('🦊 Fox Gift! +'+fmt(g)+' Ki','fox');}
  snd('ach');
 }
 function spawnSwarm(n){var z=$('tapZone');for(var i=0;i<n;i++){var f=document.createElement('button');f.className='foxb swarm';f.textContent='🦊';f.setAttribute('aria-label','Spirit fox');foxPos(f);f.style.animationDelay=(Math.random()*-1.4)+'s';
  f.addEventListener('pointerdown',function(e){e.preventDefault();e.stopPropagation();ac();this.remove();catchFox(true)});z.appendChild(f);setTimeout(function(e){e.remove()}.bind(null,f),12000)}snd('fox')}
 
 /* ---------- ACHIEVEMENTS ---------- */
-function checkAch(){ACH.forEach(function(a){if(!S.ach[a[0]]&&a[3]()){S.ach[a[0]]=1;toast('🏆 '+a[1]+' · +2% production');snd('ach');}})}
+function achCur(a){var v=a.cur();return typeof v==='number'&&v===v?v:(v?1:0)}
+var achDirty=true;
+function checkAch(){var h=new Date().getHours();if(h>=2&&h<4)S.owl=1;
+ var got=[];for(var i=0;i<ACH.length;i++){var a=ACH[i];if(!S.ach[a.id]&&achCur(a)>=a.n){S.ach[a.id]=1;got.push(a)}}
+ if(!got.length)return 0;achDirty=true;
+ if(got.length<=2)got.forEach(function(a){toast('🏆 '+a.name+' · +2% production')});else toast('🏆 '+got.length+' achievements unlocked · +'+(got.length*2)+'% production');
+ snd('ach');return got.length}
 
 /* ---------- SAVE ---------- */
 function save(){S.lastSeen=Date.now();try{localStorage.setItem(KEY,JSON.stringify(S));return true}catch(e){return false}}
+function num(v,d){return typeof v==='number'&&isFinite(v)?cl(v):(d||0)}
+function cleanQ(x){if(!x||typeof x!=='object')return {cd:0};if(typeof x.t==='string'&&QT[x.t])return {t:x.t,b:num(x.b),n:Math.max(1,num(x.n,1)),rw:['mp','seals','surge','ki'].indexOf(x.rw)>=0?x.rw:'ki'};return {cd:Math.min(Q_REFRESH,num(x.cd))}}
+function cleanExp(x){if(!x||typeof x!=='object')return null;var d=Math.floor(num(x.d));if(!EXPD[d])return null;return {d:d,left:Math.min(EXPD[d].s,num(x.left)),ki:num(x.ki),sl:num(x.sl),n:Math.max(1,Math.floor(num(x.n,1)))}}
+var SPECIAL={q:1,exp:1,buyQty:1};
 function merge(o){var s=fresh();if(!o||typeof o!=='object')return s;
- for(var k in s){if(o[k]===undefined||o[k]===null)continue;
+ for(var k in s){if(SPECIAL[k]||o[k]===undefined||o[k]===null)continue;
   if(typeof s[k]==='object'&&s[k]!==null){if(typeof o[k]!=='object')continue;for(var j in o[k]){var v=o[k][j];if(typeof v==='number'&&isFinite(v))s[k][j]=cl(v)}}
-  else if(typeof s[k]===typeof o[k]){if(typeof o[k]!=='number')s[k]=o[k];else if(isFinite(o[k]))s[k]=cl(o[k])}}
+  else if(typeof s[k]===typeof o[k]){if(typeof o[k]!=='number')s[k]=typeof o[k]==='string'?o[k].slice(0,40):o[k];else if(isFinite(o[k]))s[k]=cl(o[k])}}
+ if(o.buyQty==='max'||[1,10,25].indexOf(o.buyQty)>=0)s.buyQty=o.buyQty;
+ if(Array.isArray(o.q))s.q=o.q.slice(0,3).map(cleanQ);
+ if(Array.isArray(o.exp))s.exp=o.exp.slice(0,2).map(cleanExp).filter(Boolean);
  // ---- migrations ----
  var ov=typeof o.v==='number'?o.v:1;
  if(ov<2){s.ascLife=Math.max(s.ascLife,s.asc);s.runT=Math.max(0,(Date.now()-s.runStart)/1000);var e=s.perks.echo,t=0;while(clickTps(t)<e)t++;s.perks.echo=t;} // v1 had a single ascension counter: it becomes the lifetime count too
+ if(ov<3){if(o.sci===true)s.nf=1;s.vib=o.sound!==false;} // v2.0 -> v2.1: shop tiers, seals spent and achievements carry over untouched (no refunds, no wipes)
  if(s.ascLife<s.asc)s.ascLife=s.asc;
  if([0,10,25,50].indexOf(s.autoPct)<0)s.autoPct=0;
- s.v=2;
+ if([0,1,2].indexOf(s.nf)<0)s.nf=0;
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(s.dLast))s.dLast='';
+ if(!SKINS.some(function(k){return k.id===s.skin}))s.skin='ember';
+ if(!EVENTS.some(function(e){return e.id===s.evId})){s.evId='';s.evT=0}
+ if(s.mpSpent>s.mp){s.mpSpent=0;TAL.forEach(function(t){s.tal[t.id]=0})}
+ s.tappers=Math.min(MAX_TAPPERS,Math.floor(s.tappers));
+ s.v=3;
  return s}
 function load(){var raw=null;try{raw=localStorage.getItem(KEY)}catch(e){}
  if(!raw)return false;try{S=merge(JSON.parse(raw));return true}catch(e){return false}}
 function exportSave(){save();return btoa(unescape(encodeURIComponent(JSON.stringify(S))))}
-function importSave(str){try{var o=JSON.parse(decodeURIComponent(escape(atob(str.trim()))));if(!o||typeof o.ki!=='number')throw 0;S=merge(o);S.lastSeen=Date.now();save();return true}catch(e){return false}}
-function hardReset(){try{localStorage.removeItem(KEY)}catch(e){}S=fresh();rollSixth(true);save()}
+function importSave(str){try{var o=JSON.parse(decodeURIComponent(escape(atob(str.trim()))));if(!o||typeof o.ki!=='number')throw 0;S=merge(o);S.lastSeen=Date.now();TR.on=false;save();return true}catch(e){return false}}
+function hardReset(){try{localStorage.removeItem(KEY)}catch(e){}S=fresh();TR.on=false;rollSixth(true);save()}
 
 /* ---------- SOUND ---------- */
 var AC=null;
@@ -530,157 +887,274 @@ function snd(kind){if(!S.sound)return;if(!ac())return;try{
 /* ---------- UI ---------- */
 function $(id){return document.getElementById(id)}
 var floats=0;
-function floatNum(x,y,txt,crit){if(floats>30)return;var z=$('tapZone'),d=document.createElement('div');d.className='float'+(crit?' crit':'');d.textContent=txt;
+function floatNum(x,y,txt,crit){if(!S.fx||floats>24)return;var z=$('tapZone'),d=document.createElement('div');d.className='float'+(crit?' crit':'');d.textContent=txt;
  d.style.left=(x+(Math.random()*30-15))+'px';d.style.top=y+'px';z.appendChild(d);floats++;setTimeout(function(){d.remove();floats--},950)}
-function sparks(x,y,n){var z=$('tapZone');for(var i=0;i<n;i++){var s=document.createElement('div');s.className='spark';var a=Math.random()*6.283,r=40+Math.random()*50;
+function sparks(x,y,n){if(!S.fx)return;var z=$('tapZone');for(var i=0;i<n;i++){var s=document.createElement('div');s.className='spark';var a=Math.random()*6.283,r=40+Math.random()*50;
  s.style.left=x+'px';s.style.top=y+'px';s.style.setProperty('--dx',Math.cos(a)*r+'px');s.style.setProperty('--dy',Math.sin(a)*r+'px');z.appendChild(s);setTimeout(function(e){e.remove()}.bind(null,s),650)}}
-function toast(t){var el=$('toasts');if(!el)return;var d=document.createElement('div');d.className='toast';d.textContent=t;el.appendChild(d);setTimeout(function(){d.remove()},3300);while(el.children.length>3)el.firstChild.remove()}
+// toasts: identical (or same-key) messages merge into one with a counter; at most 3 on screen
+var toastMap={};
+function toast(t,key){var el=$('toasts');if(!el)return;var k=key||t,ex=toastMap[k];
+ if(ex&&ex.d.isConnected){ex.n++;ex.s.textContent=t;ex.c.textContent=key?'':' ×'+ex.n;ex.d.classList.remove('bump');void ex.d.offsetWidth;ex.d.classList.add('bump');clearTimeout(ex.to);ex.to=setTimeout(function(){ex.d.remove()},3300);return}
+ var d=document.createElement('div');d.className='toast';var s=document.createElement('span');s.textContent=t;var c=document.createElement('b');d.appendChild(s);d.appendChild(c);el.appendChild(d);
+ var o={d:d,s:s,c:c,n:1};o.to=setTimeout(function(){d.remove()},3300);toastMap[k]=o;
+ while(el.children.length>3)el.firstChild.remove()}
+var mq=[];
 function modal(html){$('mbox').innerHTML=html;$('modal').classList.add('show')}
-function closeModal(){$('modal').classList.remove('show')}
+function modalQ(html){if($('modal').classList.contains('show'))mq.push(html);else modal(html)}
+function closeModal(){$('modal').classList.remove('show');if(mq.length)modal(mq.shift())}
 var fxT=0;
 function bigFx(em,col,html){var el=$('fx');el.style.setProperty('--bc',col);$('fxEm').textContent=em;$('fxTx').innerHTML=html;el.classList.remove('show');void el.offsetWidth;el.classList.add('show');clearTimeout(fxT);fxT=setTimeout(function(){el.classList.remove('show')},2900)}
 function summonFx(b){bigFx(b.ic,b.col,b.name+' answers your call!<small>'+'✦'.repeat(b.tails)+' '+b.title+' summoned</small>')}
 function shortT(t){return t>=3600?Math.ceil(t/3600)+'h':t>=60?Math.ceil(t/60)+'m':Math.ceil(t)+'s'}
+// cached DOM writers (avoid needless layout work on slow phones)
+function setH(el,h){if(el&&el._h!==h){el.innerHTML=h;el._h=h}}
+function setTxt(el,t){if(el&&el._t!==t){el.textContent=t;el._t=t}}
+function setW(el,p){if(!el)return;p=Math.max(0,Math.min(100,p||0));var v=p.toFixed(1)+'%';if(el._w!==v){el.style.width=v;el._w=v}}
+function setCls(el,c){if(el&&el.className!==c)el.className=c}
+function setBtn(b,html,cls){if(!b)return;if(b._h!==html){b.innerHTML=html;b._h=html}setCls(b,'buy '+cls)}
+function setBig(b,txt,cls){if(!b)return;setTxt(b,txt);setCls(b,'big'+(cls?' '+cls:''))}
+function setDisp(el,show,on){if(!el)return;var d=show?(on||''):'none';if(el._d!==d){el.style.display=d;el._d=d}}
+function pct(a,b){return b>0?Math.min(100,a/b*100):100}
 
-var tab='clan',sub='asc';
-function qtyLabel(){return S.buyQty==='max'?'Max':'×'+S.buyQty}
+var tab='clan',subs={clan:'clan',ascend:'asc',quest:'goals',more:'ach'},achF='all',selTal='t1',rc=0,perfT=0,perfN=0,perfMax=0;
+function qtySeg(){return '<span class="seg">'+[1,10,25,'max'].map(function(q){return '<button data-act="qty" data-q="'+q+'" class="'+(S.buyQty===q?'on':'')+'">'+(q==='max'?'Max':'×'+q)+'</button>'}).join('')+'</span>'}
+function subBar(list){var cur=subs[tab];return '<div class="sub">'+list.map(function(x){return '<button data-act="sub" data-s="'+x[0]+'" class="'+(cur===x[0]?'on':'')+'"><b>'+x[1]+'</b>'+x[2]+'<span class="sdot" id="sd_'+x[0]+'"></span></button>'}).join('')+'</div>'}
+function prog(id,label){return '<div class="prog" id="'+id+'"><div class="pl"><span>'+label+'</span><b></b></div><div class="bar"><i></i></div></div>'}
+function setProg(id,txt,p,ok){var e=$(id);if(!e)return;setTxt(e.querySelector('b'),txt);setW(e.querySelector('i'),p);setCls(e,'prog'+(ok?' ok':''))}
+function tile(id,label){return '<div class="tile" id="'+id+'"><div class="lbl">'+label+'</div><div class="v"></div><div class="s"></div></div>'}
+function setTile(id,v,s){var e=$(id);if(!e)return;setTxt(e.querySelector('.v'),v);setTxt(e.querySelector('.s'),s)}
+function row(kind,id,ic,extra,btn){return '<div class="row" data-kind="'+kind+'" data-id="'+id+'"'+(extra||'')+'><div class="ic">'+ic+'</div><div class="mid"><div class="nm"></div><div class="ds"></div><div class="bar"><i></i></div></div>'+(btn||'<button class="buy" data-act="'+kind+'" data-id="'+id+'"></button>')+'</div>'}
+function nmSet(r,name,own){setH(r.querySelector('.nm'),name+(own?'<span class="own">'+own+'</span>':''))}
+
 function buildPanel(){
- var h='';
+ var h='',sb=subs[tab];
  if(tab==='clan'){
-  h+='<h3>Your Clan <span class="seg">'+[1,10,25,'max'].map(function(q){return '<button data-act="qty" data-q="'+q+'" class="'+(S.buyQty===q?'on':'')+'">'+(q==='max'?'Max':'×'+q)+'</button>'}).join('')+'</span></h3>';
-  h+='<p class="hint">Clan members train Ki for you, even while you are away. Owning 10, 25, 50, 100… of one type doubles its output.</p>';
-  GENS.forEach(function(g,i){h+='<div class="row" data-kind="gen" data-id="'+g.id+'" data-i="'+i+'"><div class="ic">'+g.ic+'</div><div class="mid"><div class="nm">'+g.name+'<span class="own"></span></div><div class="ds"></div><div class="bar"><i></i></div></div><button class="buy" data-act="gen" data-id="'+g.id+'"></button></div>'});
- } else if(tab==='tech'){
-  h+='<h3>Training</h3><p class="hint">Sharpen your own technique. Taps get much stronger here.</p>';
-  TECHS.forEach(function(t){h+='<div class="row" data-kind="tech" data-id="'+t.id+'"><div class="ic">'+t.ic+'</div><div class="mid"><div class="nm">'+t.name+'<span class="own"></span></div><div class="ds"></div></div><button class="buy" data-act="tech" data-id="'+t.id+'"></button></div>'});
+  h+=subBar([['clan','🥷','Clan'],['tech','📜','Training']]);
+  if(sb==='clan'){h+='<h3>Your Clan '+qtySeg()+'</h3><p class="hint">Clan members train Ki for you, even while you are away. Owning 10, 25, 50, 100… of one type doubles its output.</p>';
+   GENS.forEach(function(g,i){h+=row('gen',g.id,g.ic,' data-i="'+i+'"')});}
+  else{h+='<h3>Training '+qtySeg()+'</h3><p class="hint">Sharpen your own technique. Taps get much stronger here.</p>';
+   TECHS.forEach(function(t){h+=row('tech',t.id,t.ic)});}
  } else if(tab==='blood'){
-  h+='<h3>Bloodlines <span id="blN" style="font-size:13px;color:var(--ink)"></span></h3><p class="hint">Awaken hidden bloodlines for huge boosts. They fade when you Ascend'+(S.abil.legacy?' (except your first '+(6*S.abil.legacy)+', thanks to Bloodline Legacy)':'')+', so awaken them again each run. 🔒 ones open up as you Ascend and God Rebirth.</p>';
-  BLOODS.forEach(function(b){h+='<div class="row" data-kind="blood" data-id="'+b.id+'"><div class="ic">'+b.ic+'</div><div class="mid"><div class="nm">'+b.name+'</div><div class="ds">'+b.d+'</div></div><button class="buy" data-act="blood" data-id="'+b.id+'"></button></div>'});
+  h+='<h3>Bloodlines <span class="cnt" id="blN"></span></h3><p class="hint">Awaken hidden bloodlines for huge boosts. They fade when you Ascend'+(S.abil.legacy||S.perks.keep?' (except the ones your Vault or Legacy keeps)':'')+', so awaken them again each run. 🔒 ones open up as you Ascend and God Rebirth.</p><button class="big alt" data-act="bloodall" id="blAll"></button>';
+  BLOODS.forEach(function(b){h+=row('blood',b.id,b.ic)});
  } else if(tab==='beast'){
-  h+='<h3>Spirit Beasts <span id="bstN" style="font-size:13px;color:var(--ink)"></span></h3><div class="card" id="beastInfo"></div>';
-  BEASTS.forEach(function(b){h+='<div class="row beast" data-kind="beast" data-id="'+b.id+'" style="--bc:'+b.col+'"><div class="ic">'+b.ic+'</div><div class="mid"><div class="nm">'+b.name+'<span class="own"></span></div><div class="tails">'+'✦'.repeat(b.tails)+' '+b.title+'</div><div class="ds"></div></div><button class="buy" data-act="beast" data-id="'+b.id+'"></button></div>'});
+  h+='<h3>Spirit Beasts '+qtySeg()+'</h3><div class="card" id="beastInfo"></div>';
+  BEASTS.forEach(function(b){h+='<div class="row beast" data-kind="beast" data-id="'+b.id+'" style="--bc:'+b.col+'"><div class="ic">'+b.ic+'</div><div class="mid"><div class="nm"></div><div class="tails">'+'✦'.repeat(b.tails)+' '+b.title+'</div><div class="ds"></div></div><button class="buy" data-act="beast" data-id="'+b.id+'"></button></div>'});
  } else if(tab==='ascend'){
-  h+='<div class="sub"><button data-act="sub" data-s="asc" class="'+(sub==='asc'?'on':'')+'">🔮 Ascension</button><button data-act="sub" data-s="god" class="'+(sub==='god'?'on':'')+'">✴️ God Rebirth</button></div>';
-  if(sub==='asc'){
-   h+='<div class="card" id="ascInfo"></div><button class="big" id="ascBtn" data-act="ascend"></button>';
-   if(S.perks.steward||autoAscOn())h+='<h3>Automation</h3>';
-   if(S.perks.steward)h+='<button class="big alt" data-act="autobuy" id="abBtn"></button>';
-   if(autoAscOn())h+='<button class="big alt" data-act="autoasc" id="aaBtn"></button><p class="hint">Auto-Ascend as soon as you can (ASAP, the fastest way to 100 Ascensions), or wait until the seal gain reaches this share of your current seals (slower, but bigger seal jumps).</p><div class="seg" style="margin:0 2px 10px">'+[0,10,25,50].map(function(q){return '<button style="flex:1" data-act="apct" data-q="'+q+'" class="'+(S.autoPct===q?'on':'')+'">'+(q?q+'%':'ASAP')+'</button>'}).join('')+'</div>';
-   h+='<h3>Rebirth Shop <span style="font-size:13px;color:var(--ink)">🔮 <span id="sealAvail"></span> free</span></h3><p class="hint">Spend Spirit Seals on tiered upgrades that last until God Rebirth. Spending never lowers your seal production bonus.</p>';
-   var lastCat='';PERKS.forEach(function(p){if(p.cat!==lastCat){lastCat=p.cat;h+='<h3 style="font-size:13.5px;color:var(--mut)">'+p.cat+'</h3>'}h+='<div class="row" data-kind="perk" data-id="'+p.id+'"><div class="ic">'+p.ic+'</div><div class="mid"><div class="nm">'+p.name+'<span class="own"></span></div><div class="ds"></div></div><button class="buy" data-act="perk" data-id="'+p.id+'"></button></div>'});
+  h+=subBar([['asc','🔮','Ascension'],['shop','🛒','Shop'],['god','✴️','God Rebirth']]);
+  if(sb==='asc'){
+   h+='<div class="hero"><div class="lbl">Ascend now for</div><div class="gain" id="aGain"></div><div class="hs" id="aNext"></div>'+prog('pRun','Ki this run')+prog('pTime','Run time')+'<button class="big" id="ascBtn" data-act="ascend"></button></div>';
+   h+='<div class="tiles">'+tile('tSeal','Seal bonus')+tile('tAsc','Ascensions')+tile('tSix','Sixth Path chance')+tile('tGoal','Next goal')+'</div>';
+   h+='<h3>Automation</h3><div class="card" id="autoBox"></div>';
+   h+='<details class="card"><summary>How Ascension works</summary><p class="hint" style="margin:8px 0 0">Ascending resets your Ki, clan, training and bloodlines, but grants <b>Spirit Seals</b>. Every seal you have ever earned gives <b>+10%</b> to all Ki forever (spending them in the Shop never lowers this), and every Ascension adds Rebirth Mastery. The Ki needed doubles with each Ascension in a God cycle. Each new run also rolls for the rare <b>Sixth Path</b> (×10 production).</p></details>';
+  } else if(sb==='shop'){
+   h+='<h3>Rebirth Shop '+qtySeg()+'</h3><div class="card" id="shopInfo"></div>';
+   var last='';PERKS.forEach(function(p){if(p.cat!==last){last=p.cat;h+='<h3 class="cat">'+p.cat+'</h3>'}h+=row('perk',p.id,p.ic)});
   } else {
-   h+='<div class="card" id="godInfo"></div><button class="big" id="godBtn" data-act="god"></button>';
-   h+='<h3>God Abilities <span style="font-size:13px;color:var(--ink)">✴️ <span id="divAvail"></span> free</span></h3><p class="hint">Spend Divinity on abilities. They are permanent and survive every rebirth. Active abilities also appear as round buttons beside the orb.</p>';
-   ABIL.forEach(function(a){h+='<div class="row god" data-kind="abil" data-id="'+a.id+'"><div class="ic">'+a.ic+'</div><div class="mid"><div class="nm">'+a.name+'<span class="own"></span></div><div class="ds"></div></div><div style="display:flex;flex-direction:column;gap:6px"><button class="buy" data-act="abil" data-id="'+a.id+'"></button>'+(a.act?'<button class="buy" data-act="use" data-id="'+a.id+'" style="display:none"></button>':'')+'</div></div>'});
+   h+='<div class="hero god"><div class="lbl">God Rebirth now for</div><div class="gain" id="gGain"></div>'+prog('pGod','Ascensions this God cycle')+'<button class="big" id="godBtn" data-act="god"></button></div>';
+   h+='<div class="tiles">'+tile('tDiv','Divinity')+tile('tGods','God Rebirths')+'</div>';
+   h+='<details class="card" id="godInfo"><summary><b>God Rebirth</b>: what resets and what stays</summary><p class="hint" style="margin:8px 0 0">God Rebirth is the prestige above Ascension. It resets your Spirit Seals, Rebirth Shop upgrades, this cycle\'s Ascensions, Ki, clan, training and bloodlines. Spirit beasts stay bonded but drop back to level 1, and your total Ascension count, talents, Shadow Tappers and achievements are kept. In return you gain <b>Divinity</b>: each point is <b>+50% Ki forever</b> and can be spent on God Abilities.</p></details>';
+   h+='<h3>God Abilities <span class="cnt">✴️ <span id="divAvail"></span> free</span></h3><p class="hint">Permanent abilities that survive every rebirth. Active ones also appear as round buttons beside the orb.</p>';
+   ABIL.forEach(function(a){h+='<div class="row god" data-kind="abil" data-id="'+a.id+'"><div class="ic">'+a.ic+'</div><div class="mid"><div class="nm"></div><div class="ds"></div></div><div class="bcol"><button class="buy" data-act="abil" data-id="'+a.id+'"></button>'+(a.act?'<button class="buy" data-act="use" data-id="'+a.id+'" style="display:none"></button>':'')+'</div></div>'});
   }
+ } else if(tab==='quest'){
+  h+=subBar([['goals','🎯','Goals'],['trial','⚔️','Trials'],['exp','🧭','Expeditions'],['tal','🌳','Talents']]);
+  if(sb==='goals')h+='<div class="card" id="dailyBox"></div><div class="card ev" id="evBox"></div><h3>Missions <span class="cnt" id="qInfo"></span></h3><div id="qList"></div><p class="hint">A new mission appears 5 minutes after you claim one. You can reroll one unfinished mission every 10 minutes.</p>';
+  else if(sb==='trial')h+='<div id="trialBox"></div>';
+  else if(sb==='exp')h+='<div class="card" id="expInfo"></div><div id="expList"></div>';
+  else h+='<div class="card" id="talInfo"></div><div class="tree" id="tree"></div><div class="card" id="talDet"></div><button class="big alt" data-act="respec" id="rsp">↺ Respec: refund all Mastery Points</button>';
  } else {
-  h+='<h3>Achievements <span id="achN" style="font-size:13px;color:var(--ink)"></span></h3><div class="ach" id="achList"></div>';
-  h+='<h3>Stats</h3><div class="card" id="stats" style="padding:4px 12px"></div>';
-  h+='<h3>Settings</h3><div class="two"><button class="big alt" data-act="sound" id="sBtn"></button><button class="big alt" data-act="sci" id="nBtn"></button></div>';
-  h+='<div class="two"><button class="big alt" data-act="export">📤 Export save</button><button class="big alt" data-act="import">📥 Import save</button></div>';
-  h+='<button class="big alt" data-act="savenow">💾 Save now</button><button class="big danger" data-act="reset">🗑️ Reset all progress</button>';
+  h+=subBar([['ach','🏆','Achievements'],['stats','📊','Stats'],['set','⚙️','Settings'],['skin','🎨','Skins']]);
+  if(sb==='ach')h+='<h3>Achievements <span class="cnt" id="achN"></span></h3><div class="chips">'+[['all','All'],['got','Unlocked'],['lock','Locked']].map(function(x){return '<button data-act="achf" data-q="'+x[0]+'" class="'+(achF===x[0]?'on':'')+'">'+x[1]+'</button>'}).join('')+'</div><div id="achList"></div>';
+  else if(sb==='stats')h+='<h3>Stats</h3><div class="card" id="stats" style="padding:4px 12px"></div>';
+  else if(sb==='set'){
+   h+='<h3>Settings</h3><div class="card">'+[['🔊 Sound','sound','sBtn'],['📳 Vibration','vib','vBtn'],['✨ Tap effects (turn off on slow phones)','fxt','fBtn'],['🌕 Random events','evt','eBtn']].map(function(x){return '<div class="arow"><span>'+x[0]+'</span><button class="tog" data-act="'+x[1]+'" id="'+x[2]+'"></button></div>'}).join('')+
+    '<div class="arow"><span>🔢 Number format</span></div><div class="seg" id="nfSeg">'+[['0','1.23M'],['1','1.23e6'],['2','1.23e6 eng']].map(function(x){return '<button style="flex:1" data-act="nf" data-q="'+x[0]+'"></button>'}).join('')+'</div></div>';
+   h+='<button class="big alt" data-act="tips">💡 Show beginner tips again</button><div class="two"><button class="big alt" data-act="export">📤 Export save</button><button class="big alt" data-act="import">📥 Import save</button></div>';
+   h+='<button class="big alt" data-act="savenow">💾 Save now</button><button class="big danger" data-act="reset">🗑️ Reset all progress</button>';
+  } else h+='<h3>Orb Skins</h3><p class="hint">Unlock skins with milestones, then tap one to restyle your orb. Skins are cosmetic and free.</p><div class="skins" id="skinList"></div>';
   h+='<p class="hint" style="text-align:center;margin-top:12px">Bloodline Dojo v'+VERSION+' · Autosaves every 5 seconds on this device.</p>';
  }
- $('panel').innerHTML=h;refresh(true);
+ $('panel').innerHTML=h;achDirty=true;refresh(true);
 }
-function setBtn(b,html,cls){if(b._h!==html){b.innerHTML=html;b._h=html}var c='buy '+cls;if(b.className!==c)b.className=c}
-function setTxt(el,t){if(el&&el._t!==t){el.textContent=t;el._t=t}}
-function refreshOrb(){var o=$('orb'),top=null;BEASTS.forEach(function(b){if(beastLv(b))top=b});
- var key=top?top.id:'';if(o._k!==key){o._k=key;o.classList.toggle('beastorb',!!top);if(top)o.style.setProperty('--bc',top.col);o.querySelector('.glyph').textContent=top?top.ic:'気'}
+
+/* ---------- refreshers ---------- */
+function rClan(p){
+ p.querySelectorAll('.row').forEach(function(r){var i=+r.dataset.i,g=GENS[i],n=S.gens[g.id];
+  var vis=i===0||S.gens[GENS[i-1].id]>0||n>0||S.life>=g.base*0.5;setDisp(r,vis);if(!vis)return;
+  var k=S.buyQty==='max'?Math.max(1,genMaxAfford(g)):S.buyQty,c=genCost(g,n,k),ok=isFinite(c)&&c<=S.ki&&(S.buyQty!=='max'||genMaxAfford(g)>0);
+  nmSet(r,g.name,n?'×'+n:'');
+  var nm=nextMile(n),prev=0;for(var j=0;j<MILES.length;j++){if(MILES[j]<=n)prev=MILES[j]}
+  setTxt(r.querySelector('.ds'),'+'+fmt(genRate(g))+'/s each'+(n?' · '+fmt(genRate(g)*n*buffX())+'/s total':'')+(nm?' · ×2 at '+nm:''));
+  setW(r.querySelector('.bar i'),nm?((n-prev)/(nm-prev)*100):100);
+  setBtn(r.querySelector('.buy'),'Buy ×'+k+'<small>'+fmt(c)+' Ki</small>',ok?'':'no')})}
+function rTech(p){
+ p.querySelectorAll('.row').forEach(function(r){var t=TECHS.find(function(x){return x.id===r.dataset.id}),l=S.tech[t.id];
+  nmSet(r,t.name,'Lv '+l);setTxt(r.querySelector('.ds'),t.d(l));setW(r.querySelector('.bar i'),l/t.max*100);
+  var pl=planLv(l,t.max,t.cost,S.ki,S.buyQty);if(pl.maxed)setBtn(r.querySelector('.buy'),'Maxed','done');else setBtn(r.querySelector('.buy'),'Train'+(pl.k>1?' ×'+pl.k:'')+'<small>'+fmt(pl.c)+' Ki</small>',pl.ok?'':'no')})}
+function rBlood(p){
+ var firstLocked=true;setTxt($('blN'),countBloods()+'/'+BLOODS.length);
+ var bp=bloodPlan();setBig($('blAll'),bp.n?'🩸 Awaken all affordable ('+bp.n+') · '+fmt(bp.c)+' Ki':'🩸 Awaken all affordable (none right now)',bp.n?'alt':'alt no');
+ p.querySelectorAll('.row').forEach(function(r){var b=BLOODS.find(function(x){return x.id===r.dataset.id});
+  nmSet(r,b.name,'');setTxt(r.querySelector('.ds'),b.d);setDisp(r.querySelector('.bar'),false);
+  if(S.bloods[b.id]){setBtn(r.querySelector('.buy'),'Awakened','done');setCls(r,'row');return}
+  if(!bloodOpen(b)){setBtn(r.querySelector('.buy'),'🔒<small>'+reqText(b)+'</small>','no');setCls(r,'row locked');return}
+  var c=bloodCost(b),vis=firstLocked||S.life>=c*0.1;setCls(r,'row'+(!vis&&!firstLocked?' locked':''));
+  if(!firstLocked&&!vis)setBtn(r.querySelector('.buy'),'???<small>'+fmt(c)+' Ki</small>','no');else setBtn(r.querySelector('.buy'),'Awaken<small>'+fmt(c)+' Ki</small>',c<=S.ki?'':'no');firstLocked=false})}
+function rBeast(p){
+ var nxt=BEASTS.find(function(b){return !beastOpen(b)});
+ setH($('beastInfo'),'Spirit beasts awaken after <b>100 total Ascensions</b> and stay bonded forever. Levels survive Ascension (God Rebirth sets them back to level 1). Once one is summoned your orb becomes a <b>beast orb</b>: every tap also adds 2% of beast Ki/sec per beast.'+
+  '<div class="prog'+(nxt?'':' ok')+'"><div class="pl"><span>Summoned '+beastCount()+'/9</span><b>'+(nxt?'Next at '+nxt.at+' Ascensions ('+fmt(S.ascLife)+')':'All beasts awake')+'</b></div><div class="bar"><i style="width:'+(nxt?Math.min(100,S.ascLife/nxt.at*100):100).toFixed(1)+'%"></i></div></div>Beast Ki/sec: <b>'+fmt(beastKps()*buffX())+'</b>');
+ p.querySelectorAll('.row').forEach(function(r){var b=BEASTS.find(function(x){return x.id===r.dataset.id}),open=beastOpen(b),L=beastLv(b);
+  setCls(r,'row beast'+(open?'':' sleep'));nmSet(r,b.name,L?'Lv '+L:'');
+  var lv1=BEAST_R0*Math.pow(BEAST_RS,b.tails-1)*beastMult()*globalMult();
+  setTxt(r.querySelector('.ds'),!open?'Sleeps until '+b.at+' total Ascensions ('+fmt(S.ascLife)+'/'+b.at+').':L?'+'+fmt(beastRate(b))+' Ki/s · ×2 every '+BEAST_MILE+' levels':'Ready to summon! Level 1 makes '+fmt(lv1)+' Ki/s.');
+  if(!open){setBtn(r.querySelector('.buy'),'🔒<small>'+b.at+' Asc</small>','no');return}
+  var pl=beastPlan(b,L?S.buyQty:1);setBtn(r.querySelector('.buy'),(L?'Feed'+(pl.k>1?' ×'+pl.k:''):'Summon')+'<small>'+fmt(pl.c)+' Ki</small>',pl.ok?'':'no')})}
+function rAsc(){
+ var g=sealsOnAscend(),pot=sealsPotential(),need=ascMin(),runOk=S.run>=need,mr=minRun(),timeOk=S.runT>=mr,sgm=sealGainMult(),nextNeed=Math.max(need,Math.pow((Math.max(g,pot)+1)/sgm,2)*SEAL_DIV);
+ setTxt($('aGain'),g>=1?'+'+fmt(g)+' 🔮':pot>=1&&runOk?'+'+fmt(pot)+' 🔮 (wait)':'Not ready yet');
+ setTxt($('aNext'),'Next seal at '+fmt(nextNeed)+' run Ki · Ki needed doubles each Ascension this cycle');
+ setProg('pRun',fmt(S.run)+' / '+fmt(need),pct(S.run,need),runOk);
+ setProg('pTime',fmtTime(Math.min(S.runT,mr))+' / '+fmtTime(mr)+(timeOk?' ✓':''),pct(S.runT,mr),timeOk);
+ setBig($('ascBtn'),g>=1?'🔮 Ascend for +'+fmt(g)+' Seals':!runOk?'🔒 Earn '+fmt(need)+' Ki this run to Ascend':'⏳ Ascend unlocks in '+fmtTime(runWait()+0.999),g>=1?'':'no');
+ setTile('tSeal','+'+fmt(S.sealsTotal*SEAL_BONUS*100)+'% Ki',fmt(S.sealsTotal)+' seals · '+fmt(sealsAvail())+' unspent');
+ setTile('tAsc',fmt(S.ascLife)+' total',fmt(S.asc)+' this cycle · +'+fmt(S.ascLife*masteryRate()*100)+'% Ki');
+ setTile('tSix',(sixthChance()*100).toFixed(1)+'%',S.sixth?'🌟 Active this run (×10)':'Rolled at the start of each run');
+ var nb=BEASTS.find(function(b){return !beastOpen(b)});
+ if(S.asc<GOD_ASC)setTile('tGoal','God Rebirth',fmt(S.asc)+'/'+GOD_ASC+' Ascensions this cycle');else if(nb)setTile('tGoal',nb.ic+' '+nb.name,fmt(S.ascLife)+'/'+nb.at+' total Ascensions');else setTile('tGoal','✴️ God Rebirth','Ready in the God tab');
+ var ah='';
+ if(autoAscOn())ah+='<div class="arow"><span>♻️ <b>Auto-Ascend</b></span><button class="tog'+(S.autoAsc?' on':'')+'" data-act="autoasc" id="aaBtn">'+(S.autoAsc?'On':'Off')+'</button></div><div class="seg">'+[0,10,25,50].map(function(q){return '<button style="flex:1" data-act="apct" data-q="'+q+'" class="'+(S.autoPct===q?'on':'')+'">'+(q?q+'%':'ASAP')+'</button>'}).join('')+'</div><p class="hint" style="margin:6px 0 0">ASAP ascends the moment it can (fastest route to 100). A % waits until the gain is that share of your seals.</p>';
+ else ah+='<div class="arow"><span>♻️ Auto-Ascend</span><span class="lockt">🔒 Shop › Cycle Sigil</span></div>';
+ if(S.perks.steward)ah+='<div class="arow"><span>🪄 <b>Auto-buy</b> · Steward T'+S.perks.steward+'</span><button class="tog'+(S.autoBuy?' on':'')+'" data-act="autobuy" id="abBtn">'+(S.autoBuy?'On':'Off')+'</button></div>';
+ else ah+='<div class="arow"><span>🪄 Auto-buy</span><span class="lockt">🔒 Shop › Phantom Steward</span></div>';
+ setH($('autoBox'),ah)}
+function rShop(p){
+ setH($('shopInfo'),'🔮 <b>'+fmt(sealsAvail())+'</b> unspent of '+fmt(S.sealsTotal)+' seals. Spending never lowers your +10% per seal bonus. Upgrades last until God Rebirth.');
+ p.querySelectorAll('.row').forEach(function(r){var q=PERKS.find(function(x){return x.id===r.dataset.id}),l=S.perks[q.id];
+  nmSet(r,q.name,'T'+l+'/'+q.max);setTxt(r.querySelector('.ds'),'Now: '+q.eff(l)+(l<q.max?' → Next: '+q.eff(l+1):''));setW(r.querySelector('.bar i'),l/q.max*100);
+  var pl=planLv(l,q.max,q.cost,sealsAvail(),S.buyQty);
+  if(pl.maxed)setBtn(r.querySelector('.buy'),'Maxed','done');else setBtn(r.querySelector('.buy'),'Tier '+(l+1)+(pl.k>1?'–'+(l+pl.k):'')+'<small>🔮 '+fmt(pl.c)+'</small>',pl.ok?'':'no')})}
+function rGod(p){
+ var d=divOnGod();setTxt($('gGain'),d>=1?'+'+fmt(d)+' ✴️':'Not ready yet');
+ setProg('pGod',fmt(S.asc)+' / '+GOD_ASC,pct(S.asc,GOD_ASC),S.asc>=GOD_ASC);
+ setBig($('godBtn'),d>=1?'✴️ God Rebirth for +'+fmt(d)+' Divinity':'🔒 Ascend '+GOD_ASC+'× this cycle ('+fmt(S.asc)+'/'+GOD_ASC+')',d>=1?'':'no');
+ setTile('tDiv','+'+fmt(S.divTotal*DIV_BONUS*100)+'% Ki',fmt(S.divTotal)+' Divinity · '+fmt(divAvail())+' unspent');
+ setTile('tGods',fmt(S.god),S.perks.ladder?'Heaven\'s Ladder +'+(S.perks.ladder*10)+'%':'+5% Divinity per Ascension past 100');
+ setTxt($('divAvail'),fmt(divAvail()));
+ p.querySelectorAll('.row').forEach(function(r){var a=ABIL.find(function(x){return x.id===r.dataset.id}),l=S.abil[a.id]||0;
+  nmSet(r,a.name,a.max>1&&l?'Lv '+l:'');setTxt(r.querySelector('.ds'),a.d(l));
+  var bb=r.querySelector('[data-act=abil]');if(l>=a.max)setBtn(bb,a.max>1?'Maxed':'Owned','done');else{var c=a.cost(l);setBtn(bb,(l?'Upgrade':'Unlock')+'<small>✴️ '+c+'</small>',c<=divAvail()?'':'no')}
+  var ub=r.querySelector('[data-act=use]');if(ub){setDisp(ub,!!l);if(l){var t=abilReadyIn(a.id);if(t>0)setBtn(ub,'⏳ '+fmtTime(t),'no');else if(a.id==='rampage'&&!beastCount())setBtn(ub,'No beasts','no');else setBtn(ub,'Use!','')}}})}
+function rGoals(){
+ var ready=dailyReady(),st=ready?dailyNextStreak():S.dStreak,day=cycDay(st),sk=(ready?'r':'c')+st+'_'+day,db=$('dailyBox');
+ if(db._k!==sk){db._k=sk;var dh='<div class="arow"><b>🎁 Daily gift</b><span class="cnt">Streak: '+(ready?st-1:S.dStreak)+' day'+((ready?st-1:S.dStreak)===1?'':'s')+'</span></div><div class="days">';
+  for(var d=1;d<=7;d++)dh+='<div class="'+(d<day||(!ready&&d===day)?'got':d===day?'now':'')+'">Day '+d+'<br>'+DAILY[d-1].ic+'</div>';
+  db.innerHTML=dh+'</div>'+(ready?'<button class="big" data-act="daily" id="dBtn"></button>':'<p class="hint" style="margin:0" id="dWait"></p>')}
+ if(ready)setTxt($('dBtn'),'Claim Day '+day+': '+dailyText(dailyReward(day)));else setTxt($('dWait'),'✅ Claimed today. Day '+cycDay(S.dStreak+1)+' unlocks in '+fmtTime(secsToMidnight())+'. Missing a day resets the streak.');
+ var e=evCur();setH($('evBox'),e?'<b>'+e.ic+' '+e.name+'</b> · '+e.d+' · <b>'+fmtTime(S.evT)+'</b> left':S.events?'🌤️ Random events: the next one arrives in about '+fmtTime(S.evNext)+' of play.':'🌤️ Random events are off (More › Settings).');
+ setTxt($('qInfo'),fmt(S.missionsDone)+' done');
+ var ql=$('qList'),key=S.q.map(function(q){return q.t?q.t+q.n+'_'+q.b:'cd'}).join('|');
+ if(ql._k!==key){ql._k=key;ql.innerHTML=S.q.map(function(q,i){return q.t?'<div class="row" data-qi="'+i+'"><div class="ic">'+QT[q.t].ic+'</div><div class="mid"><div class="nm">'+QT[q.t].d(q.n)+'</div><div class="ds"></div><div class="bar"><i></i></div></div><button class="buy" data-act="qgo" data-q="'+i+'"></button></div>':'<div class="row locked" data-qi="'+i+'"><div class="ic">⏳</div><div class="mid"><div class="nm">New mission soon</div><div class="ds"></div></div></div>'}).join('')}
+ S.q.forEach(function(q,i){var r=ql.querySelector('[data-qi="'+i+'"]');if(!r)return;
+  if(!q.t){setTxt(r.querySelector('.ds'),'Arrives in '+fmtTime(q.cd));return}
+  var pr=Math.min(qProg(q),q.n),dn=qDone(q);setTxt(r.querySelector('.ds'),(q.t==='ki'?fmt(pr)+' / '+fmt(q.n):comma(pr)+' / '+comma(q.n))+' · Reward: '+qRewardText(q));setW(r.querySelector('.bar i'),pct(pr,q.n));
+  if(dn)setBtn(r.querySelector('.buy'),'Claim<small>Done!</small>','');else if(S.qRr>0)setBtn(r.querySelector('.buy'),'Reroll<small>in '+shortT(S.qRr)+'</small>','no');else setBtn(r.querySelector('.buy'),'Reroll<small>Free</small>','alt')})}
+function rTrial(){
+ var box=$('trialBox');
+ if(!trialOpen()){setH(box,'<div class="card">🔒 <b>Trials</b> open after your first Ascension. Bosses are fought by hand: tap the orb fast to defeat them within 30 seconds. Wins give <b>Mastery Points</b> for Talents, Spirit Seals and a ×3 Ki boost.</div>');return}
+ var lv=TR.on?TR.lv:S.trLv,b=trialBoss(lv),key='t'+lv+(TR.on?'on':'off');
+ if(box._k!==key){box._k=key;box._h=null;box.innerHTML='<div class="hero boss" style="--bc:'+b[2]+'"><div class="bossic">'+b[0]+'</div><div class="lbl">Trial level '+(lv+1)+'</div><div class="gain" style="font-size:22px">'+b[1]+'</div><div class="hs" id="trInfo"></div>'+(TR.on?prog('pBoss','Boss HP')+prog('pBt','Time left'):'')+'<button class="big" id="trBtn" data-act="trial"></button>'+(TR.on?'<button class="big alt" data-act="trquit">🏳️ Give up</button>':'')+'</div><div class="tiles">'+tile('tWins','Trials won')+tile('tMp','Mastery Points')+'</div><p class="hint">Only your own taps hurt bosses (the Auto Clicker can\'t). Boss HP scales with your tap power, so it is about speed, not stats. Divine Storm, crits and Boss Slayer help. Each level adds 12 taps.</p>'}
+ setTxt($('trInfo'),'Defeat it in '+TRIAL_T+'s · about '+trialTaps(lv)+' taps · Reward: +'+trialMp(lv)+' Mastery, +'+fmt(trialSeals())+' Seals, Ki ×3 for 5m');
+ if(TR.on){setProg('pBoss',fmt(TR.hp)+' / '+fmt(TR.max),pct(TR.hp,TR.max),false);setProg('pBt',Math.max(0,TR.t).toFixed(1)+'s',pct(TR.t,TRIAL_T),true);setBig($('trBtn'),'👊 Fight! Tap the orb above','no')}
+ else setBig($('trBtn'),S.trCd>0?'⏳ Next Trial in '+fmtTime(S.trCd):'⚔️ Start Trial',S.trCd>0?'no':'');
+ setTile('tWins',fmt(S.trWins),'Highest level beaten: '+S.trLv);setTile('tMp',fmt(mpAvail())+' free',fmt(S.mpTotal)+' earned · spend in Talents')}
+function rExp(){
+ setH($('expInfo'),'Send a squad from your clan on a timed expedition. They return with <b>Ki</b>, <b>Spirit Seals</b> and a chance of a <b>Shadow Tapper</b> (+'+TAPPER_TPS+' auto-taps/sec forever, '+S.tappers+'/'+MAX_TAPPERS+') or a <b>Mastery Point</b>. Timers keep running while you are offline, and your clan keeps training at home.'+(totalGens()<EXP_MIN?'<br><b>Recruit at least '+EXP_MIN+' clan members this run to send a squad ('+totalGens()+'/'+EXP_MIN+').</b>':''));
+ var el=$('expList'),slots=Math.max(expSlots(),S.exp.length),key=slots+':'+S.exp.map(function(x){return x.d+(x.left>0?'r':'d')}).join(',')+(expCanSend()?'s':'');
+ if(el._k!==key){el._k=key;var h='';
+  S.exp.forEach(function(x,i){var e=EXPD[x.d];h+='<div class="row" data-ei="'+i+'"><div class="ic">🧭</div><div class="mid"><div class="nm">'+e.name+' · '+e.n+'</div><div class="ds"></div><div class="bar"><i></i></div></div><button class="buy" data-act="expc" data-q="'+i+'"></button></div>'});
+  for(var i=S.exp.length;i<slots;i++)h+='<div class="card"><b>Free slot</b> · choose a length:<div class="expg">'+EXPD.map(function(e,d){return '<button class="buy" data-act="exp" data-q="'+d+'" id="ex'+i+'_'+d+'"></button>'}).join('')+'</div></div>';
+  if(expSlots()<2)h+='<p class="hint">🌳 The Pathfinder talent adds a second slot.</p>';
+  el.innerHTML=h}
+ S.exp.forEach(function(x,i){var r=el.querySelector('[data-ei="'+i+'"]');if(!r)return;var e=EXPD[x.d];
+  setTxt(r.querySelector('.ds'),x.left>0?fmtTime(x.left)+' left · '+x.n+' members · +'+fmt(x.ki)+' Ki'+(x.sl?' · +'+fmt(x.sl)+' Seals':''):'Back home! +'+fmt(x.ki)+' Ki'+(x.sl?' · +'+fmt(x.sl)+' Seals':'')+' + a chance at loot');
+  setW(r.querySelector('.bar i'),100-pct(x.left,e.s));setBtn(r.querySelector('.buy'),x.left>0?'⏳<small>'+shortT(x.left)+'</small>':'Claim<small>Loot!</small>',x.left>0?'no':'')});
+ el.querySelectorAll('[data-act=exp]').forEach(function(b){var d=+b.dataset.q,e=EXPD[d],pv=expPreview(d);setBtn(b,e.n+' · '+e.name+'<small>+'+fmt(pv.ki)+' Ki'+(pv.sl?' · +'+fmt(pv.sl)+' 🔮':'')+' · '+Math.round(e.tp*100)+'% tapper</small>',expCanSend()?'':'no')})}
+function rTal(){
+ setH($('talInfo'),'🌳 <b>'+fmt(mpAvail())+'</b> Mastery Points free ('+fmt(S.mpTotal)+' earned). Win Trials, claim Day 5 and Day 7 gifts, or find them on expeditions. Talents are permanent and learned top to bottom in each branch.');
+ var key=TAL.map(function(t){return S.tal[t.id]?1:talOpen(t)?(t.cost<=mpAvail()?3:2):0}).join('')+selTal;
+ var tr=$('tree');if(tr._k!==key){tr._k=key;tr.innerHTML=BRANCHES.map(function(br){return '<div class="br"><h4>'+br[1]+' '+br[2]+'</h4>'+TAL.filter(function(t){return t.br===br[0]}).map(function(t){var own=S.tal[t.id],open=talOpen(t);return '<button class="node'+(own?' own':open?' open':'')+(t.cost<=mpAvail()&&open&&!own?' can':'')+(selTal===t.id?' sel':'')+'" data-act="tsel" data-id="'+t.id+'"><b>'+t.ic+'</b>'+t.name+'<small>'+(own?'✓ Learned':t.cost+' MP')+'</small></button>'}).join('')+'</div>'}).join('')}
+ var t=TAL.find(function(x){return x.id===selTal})||TAL[0],own=S.tal[t.id],open=talOpen(t),can=!own&&open&&t.cost<=mpAvail();
+ setH($('talDet'),'<div class="arow"><span><b>'+t.ic+' '+t.name+'</b><br><span class="hint" style="margin:0">'+t.d+'</span></span><button class="buy'+(own?' done':can?'':' no')+'" data-act="tal" data-id="'+t.id+'">'+(own?'Learned':!open?'🔒<small>Learn '+talPrev(t).name+' first</small>':'Learn<small>'+t.cost+' MP</small>')+'</button></div>');
+ setBig($('rsp'),talOwned()?'↺ Respec: refund all '+fmt(S.mpSpent)+' Mastery Points (free)':'↺ Respec (nothing learned yet)',talOwned()?'alt':'alt no')}
+function achVal(a,v){return a.t==='time'?fmtTime(v):v>=1e4?fmt(v):comma(v)}
+function rAch(){
+ if(!achDirty&&rc%4)return;achDirty=false;var got=countAch(),h='';
+ setTxt($('achN'),got+'/'+ACH.length+' · +'+(got*2)+'% Ki');
+ ACH_CATS.forEach(function(cat){var list=ACH.filter(function(a){return a.cat===cat}),g=list.filter(function(a){return S.ach[a.id]}).length;
+  var show=list.filter(function(a){return achF==='all'||(achF==='got')===!!S.ach[a.id]});if(!show.length)return;
+  h+='<h3 class="cat">'+cat+' <span class="cnt">'+g+'/'+list.length+'</span></h3><div class="achg">'+show.map(function(a){var ok=S.ach[a.id],sec=a.hid&&!ok,cur=Math.min(achCur(a),a.n);
+   return '<div class="achc'+(ok?' got':'')+'"><b>'+(ok?'🏆 ':'🔒 ')+(sec?'???':a.name)+'</b>'+(sec?'Secret achievement. Keep playing!':a.d)+(ok||sec?'':'<div class="bar"><i style="width:'+pct(cur,a.n).toFixed(1)+'%"></i></div><div class="pv">'+achVal(a,cur)+' / '+achVal(a,a.n)+'</div>')+'</div>'}).join('')+'</div>'});
+ setH($('achList'),h||'<p class="hint">Nothing here yet.</p>')}
+function rStats(){
+ var st=[['Lifetime Ki',fmt(S.life)],['Ki this run',fmt(S.run)],['Taps (all)',comma(S.taps)],['Your own taps',comma(S.mtaps)],['Critical taps',comma(S.crits)],['Time played',fmtTime(S.played)],['This run',fmtTime(S.runT)],
+  ['Ascensions (total)',fmt(S.ascLife)],['Ascensions (this God cycle)',fmt(S.asc)],['Best seals from one Ascension',fmt(S.bestSeals)],['Fastest Ascension run',S.fastRun?fmtTime(S.fastRun):'-'],['God Rebirths',fmt(S.god)],['Divinity',fmt(S.divTotal)],
+  ['Sixth Path births',fmt(S.sixthLife)+(S.sixth?' (active now)':'')],['Sixth Path chance',(sixthChance()*100).toFixed(1)+'%'],['Spirit beasts',beastCount()+'/9'],['Beast Ki/sec',fmt(beastKps())],['Clan members',fmt(totalGens())],
+  ['Auto-taps/sec',comma(autoTps())+(S.tappers?' ('+S.tappers+' Shadow Tappers)':'')],['Spirit foxes caught',fmt(S.foxes)],['God Abilities used',fmt(S.abilUses)],['Trials won',fmt(S.trWins)],['Missions done',fmt(S.missionsDone)],['Expeditions done',fmt(S.expDone)],
+  ['Login streak (best)',S.dStreak+' ('+S.dBest+')'],['Talents learned',talOwned()+'/'+TAL.length],['Achievements',countAch()+'/'+ACH.length],['Offline limit',offlineCapH()+'h at '+fmt(offlineRate()*100)+'%'],['Longest time away',fmtTime(S.offMax)]];
+ setH($('stats'),st.map(function(x){return '<div class="stat"><span>'+x[0]+'</span><span>'+x[1]+'</span></div>'}).join(''))}
+function rSet(){
+ [['sBtn',S.sound],['vBtn',S.vib],['fBtn',S.fx],['eBtn',S.events]].forEach(function(x){var b=$(x[0]);setTxt(b,x[1]?'On':'Off');setCls(b,'tog'+(x[1]?' on':''))});
+ var lb=['Short 1.23M','Sci 1.23e6','Eng 12.3e6'];$('nfSeg').querySelectorAll('button').forEach(function(b){var q=+b.dataset.q;setTxt(b,lb[q]);setCls(b,S.nf===q?'on':'')})}
+function rSkins(){
+ setH($('skinList'),SKINS.map(function(k){var ok=k.ok();return '<button class="skin'+(ok?'':' lock')+(S.skin===k.id?' on':'')+'" data-act="skin" data-id="'+k.id+'"><span class="sw sk-'+k.id+'"></span><b>'+k.name+'</b><small>'+(S.skin===k.id?'✓ Equipped':ok?'Tap to equip':'🔒 '+k.req)+'</small></button>'}).join(''))}
+function refreshOrb(){var o=$('orb'),top=null;BEASTS.forEach(function(b){if(beastLv(b))top=b});var useBeast=!!top&&S.skin==='ember';
+ var key=(top?top.id:'')+'|'+S.skin;if(o._k!==key){o._k=key;o.className=(useBeast?'beastorb':'')+(S.skin!=='ember'?' sk-'+S.skin:'');if(top)o.style.setProperty('--bc',top.col);o.querySelector('.glyph').textContent=top?top.ic:'気'}
  o.classList.toggle('storm',stormX()>1)}
 function refreshAbar(){var el=$('abar');if(!el)return;var own=ABIL.filter(function(a){return a.act&&S.abil[a.id]});var key=own.map(function(a){return a.id}).join();
  if(el._k!==key){el.innerHTML=own.map(function(a){return '<button data-act="use" data-id="'+a.id+'" aria-label="'+a.name+'">'+a.ic+'<i></i></button>'}).join('');el._k=key}
  el.querySelectorAll('button').forEach(function(b){var t=abilReadyIn(b.dataset.id),blk=b.dataset.id==='rampage'&&!beastCount();b.classList.toggle('cd',t>0||blk);setTxt(b.querySelector('i'),t>0?shortT(t):'')})}
-function refresh(full){
- setTxt($('ki'),fmt(S.ki));setTxt($('kps'),fmt(kps()));setTxt($('tapv'),fmt(tapValue()));setTxt($('sealN'),fmt(S.sealsTotal));
- var showDiv=S.god>0||S.divTotal>0;$('divW').style.display=showDiv?'block':'none';if(showDiv)setTxt($('divN'),fmt(S.divTotal));
- var now=Date.now(),bf=[];if(S.sixth)bf.push('🌟 Sixth Path ×10');if(frenzy()>1)bf.push('🦊 Frenzy ×'+frenzyX()+' · '+Math.ceil((S.frenzyUntil-now)/1000)+'s');if(stormX()>1)bf.push('🌩️ Storm ×100 · '+Math.ceil((S.stormUntil-now)/1000)+'s');if(rampX()>1)bf.push('🌀 Rampage · '+Math.ceil((S.rampUntil-now)/1000)+'s');var bh=bf.map(function(x,i){return S.sixth&&i===0?'<span class="six">'+x+'</span>':x}).join(' ');var be=$('buffs');if(be._t!==bh){be.innerHTML=bh;be._t=bh}
- refreshOrb();refreshAbar();
- $('soundBtn').textContent=S.sound?'🔊':'🔇';
- var p=$('panel');
- if(tab==='clan'){
-  var shown=0;
-  p.querySelectorAll('.row').forEach(function(r){var g=GENS[+r.dataset.i],n=S.gens[g.id];
-   var prevOwned=+r.dataset.i===0||S.gens[GENS[+r.dataset.i-1].id]>0||n>0||S.life>=g.base*0.5;
-   r.style.display=(prevOwned&&shown<99)?'':'none';if(!prevOwned)return;
-   var k=S.buyQty==='max'?Math.max(1,genMaxAfford(g)):S.buyQty,c=genCost(g,n,k),ok=c<=S.ki&&(S.buyQty!=='max'||genMaxAfford(g)>0);
-   setTxt(r.querySelector('.own'),n?'×'+n:'');
-   var nm=nextMile(n),prev=0;for(var i=0;i<MILES.length;i++){if(MILES[i]<=n)prev=MILES[i]}
-   setTxt(r.querySelector('.ds'),'+'+fmt(genRate(g))+'/s each'+(n?' · '+fmt(genRate(g)*n*frenzy())+'/s total':'')+(nm?' · ×2 at '+nm:''));
-   r.querySelector('.bar i').style.width=(nm?((n-prev)/(nm-prev)*100):100)+'%';
-   setBtn(r.querySelector('.buy'),'Buy '+(S.buyQty==='max'?'×'+k:qtyLabel())+'<small>'+fmt(c)+' Ki</small>',ok?'':'no');
-  });
- } else if(tab==='tech'){
-  p.querySelectorAll('.row').forEach(function(r){var t=TECHS.find(function(x){return x.id===r.dataset.id}),l=S.tech[t.id];
-   setTxt(r.querySelector('.own'),' Lv '+l);setTxt(r.querySelector('.ds'),t.d(l));
-   if(l>=t.max)setBtn(r.querySelector('.buy'),'Maxed','done');else{var c=t.cost(l);setBtn(r.querySelector('.buy'),'Train<small>'+fmt(c)+' Ki</small>',c<=S.ki?'':'no')}});
- } else if(tab==='blood'){
-  var firstLocked=true;setTxt($('blN'),countBloods()+'/'+BLOODS.length);
-  p.querySelectorAll('.row').forEach(function(r){var b=BLOODS.find(function(x){return x.id===r.dataset.id});
-   if(S.bloods[b.id]){setBtn(r.querySelector('.buy'),'Awakened','done');r.classList.remove('locked');return}
-   if(!bloodOpen(b)){setBtn(r.querySelector('.buy'),'🔒<small>'+reqText(b)+'</small>','no');r.classList.add('locked');return}
-   var c=bloodCost(b);var vis=firstLocked||S.life>=c*0.1;r.classList.toggle('locked',!vis&&!firstLocked);
-   if(!firstLocked&&!vis){setBtn(r.querySelector('.buy'),'???<small>'+fmt(c)+' Ki</small>','no');}else setBtn(r.querySelector('.buy'),'Awaken<small>'+fmt(c)+' Ki</small>',c<=S.ki?'':'no');firstLocked=false});
- } else if(tab==='beast'){
-  var nxt=BEASTS.find(function(b){return !beastOpen(b)});
-  var bi='Spirit beasts awaken after <b>100 total Ascensions</b> and stay bonded to you forever. Their levels survive Ascension (God Rebirth sets them back to level 1). Each makes enormous Ki, and once one is summoned your orb becomes a <b>beast orb</b>: every tap also adds 2% of beast Ki/sec per beast.<br><br>'+
-   'Total Ascensions: <b>'+fmt(S.ascLife)+'</b>'+(nxt?' · next beast at <b>'+nxt.at+'</b><div class="bar"><i style="width:'+Math.min(100,S.ascLife/nxt.at*100)+'%"></i></div>':' · all beasts awake')+'Beast Ki/sec: <b>'+fmt(beastKps()*frenzy())+'</b>';
-  if(full||$('beastInfo')._t!==bi){$('beastInfo').innerHTML=bi;$('beastInfo')._t=bi}
-  setTxt($('bstN'),beastCount()+'/9 summoned');
-  p.querySelectorAll('.row').forEach(function(r){var b=BEASTS.find(function(x){return x.id===r.dataset.id}),open=beastOpen(b),L=beastLv(b),c=beastCost(b);
-   r.classList.toggle('sleep',!open);setTxt(r.querySelector('.own'),L?' Lv '+L:'');
-   var lv1=BEAST_R0*Math.pow(BEAST_RS,b.tails-1)*beastMult()*globalMult();
-   setTxt(r.querySelector('.ds'),!open?'Sleeps until '+b.at+' total Ascensions ('+fmt(S.ascLife)+'/'+b.at+').':L?'+'+fmt(beastRate(b))+' Ki/s · ×2 every '+BEAST_MILE+' levels':'Ready to summon! Level 1 makes '+fmt(lv1)+' Ki/s.');
-   if(!open)setBtn(r.querySelector('.buy'),'🔒<small>'+b.at+' Asc</small>','no');
-   else setBtn(r.querySelector('.buy'),(L?'Feed':'Summon')+'<small>'+fmt(c)+' Ki</small>',c<=S.ki?'':'no')});
- } else if(tab==='ascend'&&sub==='asc'){
-  var g=sealsOnAscend(),sgm=sealGainMult(),nextNeed=Math.max(ascMin(),Math.pow((g+1)/sgm,2)*SEAL_DIV);
-  var info='Ascending resets your Ki, clan, training and bloodlines, but grants <b>Spirit Seals</b>. Every seal you have ever earned gives <b>+10%</b> to all Ki forever, and every Ascension adds <b>+3%</b> Rebirth Mastery.<br><br>'+
-   'Seals now: <b>'+fmt(S.sealsTotal)+'</b> (+'+fmt(S.sealsTotal*SEAL_BONUS*100)+'% Ki)<br>'+
-   'Ascensions: <b>'+fmt(S.ascLife)+'</b> total · '+fmt(S.asc)+' this God cycle (+'+fmt(S.ascLife*MASTERY*100)+'% Ki)<br>'+
-   'Ki earned this run: <b>'+fmt(S.run)+'</b> (need '+fmt(ascMin())+', doubles each Ascension this cycle)<br>Run time: <b>'+fmtTime(S.runT)+'</b> (minimum '+fmtTime(minRun())+')<br>Next seal at <b>'+fmt(nextNeed)+'</b> run Ki<div class="bar"><i style="width:'+Math.min(100,S.run/nextNeed*100)+'%"></i></div>';
-  if($('abBtn'))setTxt($('abBtn'),S.autoBuy?'🪄 Auto-buy: On':'🪄 Auto-buy: Off');
-  if($('aaBtn'))setTxt($('aaBtn'),S.autoAsc?'♻️ Auto-Ascend: On ('+(S.autoPct?S.autoPct+'%':'ASAP')+')':'♻️ Auto-Ascend: Off');
-  if(full||$('ascInfo')._t!==info){$('ascInfo').innerHTML=info;$('ascInfo')._t=info}
-  var ab=$('ascBtn'),lbl=g>=1?'🔮 Ascend for +'+fmt(g)+' Seals':S.run<ascMin()?'🔒 Earn '+fmt(ascMin())+' Ki this run to Ascend':'⏳ Ascend unlocks in '+fmtTime(runWait()+0.999);if(ab._t!==lbl){ab.textContent=lbl;ab._t=lbl}ab.className='big'+(g>=1?'':' no');
-  setTxt($('sealAvail'),fmt(sealsAvail()));
-  p.querySelectorAll('.row').forEach(function(r){var q=PERKS.find(function(x){return x.id===r.dataset.id}),l=S.perks[q.id];
-   setTxt(r.querySelector('.own'),' T'+l);setTxt(r.querySelector('.ds'),q.d(l));
-   if(l>=q.max)setBtn(r.querySelector('.buy'),'Maxed','done');else{var c=q.cost(l);setBtn(r.querySelector('.buy'),'Tier '+(l+1)+'<small>🔮 '+fmt(c)+'</small>',c<=sealsAvail()?'':'no')}});
- } else if(tab==='ascend'){
-  var d=divOnGod();
-  var gi='<b>God Rebirth</b> is the prestige above Ascension. It resets your Spirit Seals, Rebirth Shop upgrades, this cycle\'s Ascensions, Ki, clan, training and bloodlines. Spirit beasts stay bonded but drop back to level 1, and your total Ascension count is kept. In return you gain <b>Divinity</b>: each point is <b>+50% Ki forever</b> and can be spent on God Abilities.<br><br>'+
-   'Requirement: <b>'+GOD_ASC+' Ascensions in this God cycle</b> (you have '+fmt(S.asc)+'). Each Ascension past '+GOD_ASC+' adds +5% Divinity.<div class="bar"><i style="width:'+Math.min(100,S.asc/GOD_ASC*100)+'%"></i></div>'+
-   'Divinity: <b>'+fmt(S.divTotal)+'</b> (+'+fmt(S.divTotal*DIV_BONUS*100)+'% Ki) · God Rebirths: <b>'+S.god+'</b>';
-  if(full||$('godInfo')._t!==gi){$('godInfo').innerHTML=gi;$('godInfo')._t=gi}
-  var gb=$('godBtn'),gl=d>=1?'✴️ God Rebirth for +'+fmt(d)+' Divinity':'🔒 Ascend '+GOD_ASC+'× this cycle ('+fmt(S.asc)+'/'+GOD_ASC+')';if(gb._t!==gl){gb.textContent=gl;gb._t=gl}gb.className='big'+(d>=1?'':' no');
-  setTxt($('divAvail'),fmt(divAvail()));
-  p.querySelectorAll('.row').forEach(function(r){var a=ABIL.find(function(x){return x.id===r.dataset.id}),l=S.abil[a.id]||0;
-   setTxt(r.querySelector('.own'),a.max>1&&l?' Lv '+l:'');setTxt(r.querySelector('.ds'),a.d(l));
-   var bb=r.querySelector('[data-act=abil]');if(l>=a.max)setBtn(bb,a.max>1?'Maxed':'Owned','done');else{var c=a.cost(l);setBtn(bb,(l?'Upgrade':'Unlock')+'<small>✴️ '+c+'</small>',c<=divAvail()?'':'no')}
-   var ub=r.querySelector('[data-act=use]');if(ub){ub.style.display=l?'':'none';if(l){var t=abilReadyIn(a.id);if(t>0)setBtn(ub,'⏳ '+fmtTime(t),'no');else if(a.id==='rampage'&&!beastCount())setBtn(ub,'No beasts','no');else setBtn(ub,'Use!','')}}});
- } else {
-  var al=$('achList');if(al){var html=ACH.map(function(a){return '<div class="'+(S.ach[a[0]]?'got':'')+'"><b>'+(S.ach[a[0]]?'🏆 ':'🔒 ')+a[1]+'</b>'+a[2]+'</div>'}).join('');if(al._t!==html){al.innerHTML=html;al._t=html}
-   setTxt($('achN'),countAch()+'/'+ACH.length+' · +'+(countAch()*2)+'% Ki');
-   var st=[['Ki this run',fmt(S.run)],['Lifetime Ki',fmt(S.life)],['Taps',fmt(S.taps)],['Critical taps',fmt(S.crits)],['Spirit foxes caught',fmt(S.foxes)],['Ascensions (total)',fmt(S.ascLife)],['Ascensions (this God cycle)',fmt(S.asc)],['God Rebirths',fmt(S.god)],['Divinity',fmt(S.divTotal)],['Spirit beasts',beastCount()+'/9'],['Sixth Path births',fmt(S.sixthLife)+(S.sixth?' (active now)':'')],['Sixth Path chance',(sixthChance()*100).toFixed(1)+'%'],['Beast Ki/sec',fmt(beastKps())],['Clan members',fmt(totalGens())],['This run',fmtTime((Date.now()-S.runStart)/1000)],['Total play time',fmtTime(S.played)],['Offline limit',offlineCapH()+'h at '+fmt(offlineRate()*100)+'%']];
-   var sh=st.map(function(x){return '<div class="stat"><span>'+x[0]+'</span><span>'+x[1]+'</span></div>'}).join('');var se=$('stats');if(se._t!==sh){se.innerHTML=sh;se._t=sh}
-   setTxt($('sBtn'),S.sound?'🔊 Sound: On':'🔇 Sound: Off');setTxt($('nBtn'),S.sci?'🔢 Numbers: 1.2e6':'🔢 Numbers: 1.2M');}
- }
- // nav dots: something affordable in other tabs
- var dots={clan:GENS.some(function(g,i){return (i===0||S.gens[GENS[i-1].id]>0)&&genCost(g,S.gens[g.id],1)<=S.ki}),
-  tech:TECHS.some(function(t){return S.tech[t.id]<t.max&&t.cost(S.tech[t.id])<=S.ki}),
-  blood:BLOODS.some(function(b){return !S.bloods[b.id]&&bloodCost(b)<=S.ki}),
+function refreshBoss(){var el=$('boss');if(!TR.on){setCls(el,'');return}var b=trialBoss(TR.lv);
+ if(el._k!==TR.lv){el._k=TR.lv;el.innerHTML='<div><span class="bic">'+b[0]+'</span> <b>'+b[1]+'</b> · Lv '+(TR.lv+1)+' · <span class="bt"></span></div><div class="hp"><i></i></div>'}
+ setCls(el,'show');setTxt(el.querySelector('.bt'),Math.max(0,TR.t).toFixed(1)+'s');setW(el.querySelector('.hp i'),pct(TR.hp,TR.max))}
+function refreshTip(){var t=tipNow(),el=$('tip');if(!t){setCls(el,'');return}setH(el,'<span>💡 '+t.t+'</span><button data-act="tipok">Got it</button><button data-act="tipoff" aria-label="Hide tips">✕</button>');setCls(el,'show')}
+function rDots(){
+ var dots={clan:GENS.some(function(g,i){return genOpen(i)&&genCost(g,S.gens[g.id],1)<=S.ki})||TECHS.some(function(t){return S.tech[t.id]<t.max&&t.cost(S.tech[t.id])<=S.ki}),
+  blood:BLOODS.some(function(b){return !S.bloods[b.id]&&bloodOpen(b)&&bloodCost(b)<=S.ki}),
   beast:BEASTS.some(function(b){return beastOpen(b)&&beastCost(b)<=S.ki}),
-  ascend:sealsOnAscend()>=1||godReady()||PERKS.some(function(q){return S.perks[q.id]<q.max&&q.cost(S.perks[q.id])<=sealsAvail()})||ABIL.some(function(a){return (S.abil[a.id]||0)<a.max&&a.cost(S.abil[a.id]||0)<=divAvail()}),more:false};
+  ascend:sealsOnAscend()>=1||godReady()||PERKS.some(function(q){return S.perks[q.id]<q.max&&q.cost(S.perks[q.id])<=sealsAvail()})||ABIL.some(function(a){return (S.abil[a.id]||0)<a.max&&a.cost(S.abil[a.id]||0)<=divAvail()}),
+  quest:dailyReady()||S.q.some(qDone)||S.exp.some(function(x){return x.left<=0})||(trialOpen()&&!TR.on&&S.trCd<=0&&S.trWins===0)||TAL.some(function(t){return !S.tal[t.id]&&talOpen(t)&&t.cost<=mpAvail()}),more:false};
  document.querySelectorAll('nav button').forEach(function(b){b.classList.toggle('has',!!dots[b.dataset.tab]&&b.dataset.tab!==tab)});
+ if(tab==='quest'){var sd={goals:dailyReady()||S.q.some(qDone),trial:trialOpen()&&!TR.on&&S.trCd<=0,exp:S.exp.some(function(x){return x.left<=0}),tal:TAL.some(function(t){return !S.tal[t.id]&&talOpen(t)&&t.cost<=mpAvail()})};
+  for(var k in sd){var e=$('sd_'+k);if(e)setCls(e,'sdot'+(sd[k]&&subs.quest!==k?' on':''))}}}
+function refresh(full){
+ var t0=performance.now();rc++;var slow=full||rc%4===0;
+ setTxt($('ki'),fmt(S.ki));setTxt($('kps'),fmt(kps()));setTxt($('tapv'),fmt(tapValue()));setTxt($('sealN'),fmt(S.sealsTotal));
+ var showDiv=S.god>0||S.divTotal>0;setDisp($('divW'),showDiv,'block');if(showDiv)setTxt($('divN'),fmt(S.divTotal));
+ var now=Date.now(),bf=[],e=evCur();if(S.sixth)bf.push('<span class="six">🌟 Sixth Path ×10</span>');if(e)bf.push('<span class="evb">'+e.ic+' '+e.name+' · '+shortT(S.evT)+'</span>');
+ if(frenzy()>1)bf.push('🦊 ×'+frenzyX()+' · '+Math.ceil((S.frenzyUntil-now)/1000)+'s');if(S.surgeT>0)bf.push('⚡ ×2 · '+shortT(S.surgeT));if(S.gloryT>0)bf.push('⚔️ ×3 · '+shortT(S.gloryT));
+ if(stormX()>1)bf.push('🌩️ Storm ×100 · '+Math.ceil((S.stormUntil-now)/1000)+'s');if(rampX()>1)bf.push('🌀 Rampage · '+Math.ceil((S.rampUntil-now)/1000)+'s');
+ setH($('buffs'),bf.join(' '));
+ refreshOrb();refreshAbar();refreshBoss();setTxt($('soundBtn'),S.sound?'🔊':'🔇');
+ if(slow)refreshTip();
+ var p=$('panel'),sb=subs[tab];
+ if(tab==='clan'){if(sb==='clan')rClan(p);else rTech(p)}
+ else if(tab==='blood')rBlood(p);else if(tab==='beast')rBeast(p);
+ else if(tab==='ascend'){if(sb==='asc')rAsc();else if(sb==='shop')rShop(p);else rGod(p)}
+ else if(tab==='quest'){if(sb==='goals')rGoals();else if(sb==='trial')rTrial();else if(sb==='exp')rExp();else rTal()}
+ else{if(sb==='ach'){if(slow)rAch()}else if(sb==='stats'){if(slow)rStats()}else if(sb==='set')rSet();else if(slow)rSkins()}
+ if(slow)rDots();
+ var dt=performance.now()-t0;perfT+=dt;perfN++;if(dt>perfMax)perfMax=dt;
 }
 
 /* ---------- LOOP ---------- */
 var last=Date.now(),echoAcc=0,achAcc=0,autoAcc=0,paused=false;
 function step(dt){ // seconds, online
  earn(kps()*dt);S.played+=dt;S.runT+=dt;
- if(S.perks.echo){echoAcc+=dt*clickTps(S.perks.echo);var n=Math.floor(echoAcc);if(n>0){echoAcc-=n;autoTaps(n)}}
- autoAcc+=dt;if(autoAcc>=1){autoAcc=0;if(S.perks.steward&&S.autoBuy)autoBuy(S.perks.steward);tryAutoAsc()}
+ var tps=autoTps();if(tps){echoAcc+=dt*tps;var n=Math.floor(echoAcc);if(n>0){echoAcc-=n;autoTaps(n)}}
+ var back=timers(dt,false);if(back)toast('🧭 Expedition back home! Claim it in Quests.','exp');
+ autoAcc+=dt;if(autoAcc>=1){autoAcc=0;if(S.perks.steward&&S.autoBuy)autoBuy(S.perks.steward);tryAutoAsc();fillQ()}
  achAcc+=dt;if(achAcc>=1){achAcc=0;checkAch()}
  if(!(S.ki>=0))S.ki=0;if(!(S.run>=0))S.run=0;
 }
@@ -691,49 +1165,74 @@ function tick(){
  if(dt>10){applyOffline(dt,true);dt=0}
  step(dt);
  if(!foxUntil&&now>=foxAt&&foxAt)showFox();
- if(foxUntil&&now>foxUntil){$('fox').style.display='none';foxUntil=0;scheduleFox()}
+ if(foxUntil&&now>foxUntil){$('fox').style.display='none';foxUntil=0;S.foxMiss++;scheduleFox()}
 }
 
 /* ---------- EVENTS ---------- */
 function onOrb(e){e.preventDefault();ac();var z=$('tapZone').getBoundingClientRect();var x=(e.clientX||z.width/2+z.left)-z.left,y=(e.clientY||z.height/2+z.top)-z.top;
- tap(x,y);setTxt($('ki'),fmt(S.ki));var o=$('orb');o.classList.add('hit');clearTimeout(o._t);o._t=setTimeout(function(){o.classList.remove('hit')},70);
- if(navigator.vibrate&&S.sound)try{navigator.vibrate(8)}catch(_){}}
+ tap(x,y);setTxt($('ki'),fmt(S.ki));if(TR.on)refreshBoss();var o=$('orb');o.classList.add('hit');clearTimeout(o._t);o._t=setTimeout(function(){o.classList.remove('hit')},70);
+ if(navigator.vibrate&&S.vib)try{navigator.vibrate(8)}catch(_){}}
+function navTo(t){tab=t;document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x.dataset.tab===t)});$('panel').scrollTop=0;buildPanel()}
+function dailyModal(){var st=dailyNextStreak(),day=cycDay(st),h='<h2>🎁 Daily gift · Day '+day+'</h2><p>'+(st>1?'Your login streak is <b>'+(st-1)+' day'+(st>2?'s':'')+'</b>. Keep it going!':'Log in every day for bigger gifts. Missing a day resets the streak.')+'</p><div class="days">';
+ for(var d=1;d<=7;d++)h+='<div class="'+(d<day?'got':d===day?'now':'')+'">Day '+d+'<br>'+DAILY[d-1].ic+'</div>';
+ return h+'</div><p style="text-align:center;font-weight:800;color:var(--acc2)">'+dailyText(dailyReward(day))+'</p><button class="big" data-act="daily">Claim</button>'}
 function wire(){
  $('orb').addEventListener('pointerdown',onOrb);
  $('orb').addEventListener('keydown',function(e){if(e.key===' '||e.key==='Enter'){e.preventDefault();var r=$('orb');onOrb({preventDefault:function(){},clientX:r.getBoundingClientRect().left+r.offsetWidth/2,clientY:r.getBoundingClientRect().top+r.offsetHeight/2})}});
  $('orb').addEventListener('contextmenu',function(e){e.preventDefault()});
  $('fox').addEventListener('pointerdown',function(e){e.preventDefault();e.stopPropagation();ac();catchFox()});
  $('soundBtn').addEventListener('click',function(){S.sound=!S.sound;if(S.sound){ac();snd('buy')}refresh();save()});
- $('nav').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;tab=b.dataset.tab;document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x===b)});$('panel').scrollTop=0;buildPanel()});
+ $('nav').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;navTo(b.dataset.tab)});
+ document.addEventListener('input',function(e){if(e.target.id==='rsIn'){var ok=e.target.value.trim().toUpperCase()==='RESET';$('rsBtn').className='big danger'+(ok?'':' no')}});
  document.addEventListener('click',function(e){var b=e.target.closest('[data-act]');if(!b)return;var a=b.dataset.act,id=b.dataset.id,ok;
   if(a==='gen'){ok=buyGen(id,S.buyQty);snd(ok?'buy':'no');if(ok){refresh();checkAch()}}
-  else if(a==='tech'){ok=buyTech(id);snd(ok?'buy':'no');refresh()}
+  else if(a==='tech'){ok=buyTech(id,S.buyQty);snd(ok?'buy':'no');refresh()}
   else if(a==='blood'){ok=buyBlood(id);snd(ok?'ach':'no');refresh();checkAch()}
-  else if(a==='perk'){ok=buyPerk(id);snd(ok?'buy':'no');if(ok&&(id==='steward'||id==='cycle'))buildPanel();else refresh()}
-  else if(a==='beast'){ok=buyBeast(id);if(!ok)snd('no');else if(beastLv(BEASTS.find(function(x){return x.id===id}))>1)snd('buy');refresh()}
-  else if(a==='sub'){sub=b.dataset.s;$('panel').scrollTop=0;buildPanel()}
+  else if(a==='bloodall'){var n=buyAllBlood();snd(n?'ach':'no');if(n){toast('🩸 Awakened '+n+' bloodline'+(n>1?'s':''));checkAch()}refresh()}
+  else if(a==='perk'){ok=buyPerk(id,S.buyQty);snd(ok?'buy':'no');if(ok)checkAch();if(ok&&(id==='steward'||id==='cycle'))buildPanel();else refresh()}
+  else if(a==='beast'){var bb=BEASTS.find(function(x){return x.id===id});ok=buyBeast(id,false,beastLv(bb)?S.buyQty:1);if(!ok)snd('no');else if(beastLv(bb)>1)snd('buy');refresh()}
+  else if(a==='sub'){subs[tab]=b.dataset.s;$('panel').scrollTop=0;buildPanel()}
   else if(a==='autobuy'){S.autoBuy=!S.autoBuy;snd('buy');refresh();save()}
   else if(a==='autoasc'){S.autoAsc=!S.autoAsc;snd('buy');refresh();save()}
-  else if(a==='apct'){S.autoPct=+b.dataset.q;buildPanel();save()}
+  else if(a==='apct'){S.autoPct=+b.dataset.q;refresh();save()}
   else if(a==='abil'){ok=buyAbil(id);snd(ok?'ach':'no');if(ok){buildPanel();save()}}
   else if(a==='use'){ok=useAbil(id);snd(ok?'asc':'no');refresh()}
   else if(a==='god'){var d=divOnGod();if(d<1){snd('no');return}
-   modal('<h2>✴️ God Rebirth?</h2><p>You will gain <b style="color:#ffe08a">+'+fmt(d)+' Divinity</b> (+'+fmt(d*DIV_BONUS*100)+'% Ki forever, and points for God Abilities).</p><p>Resets: Ki, clan, training, bloodlines, <b>all Spirit Seals and Rebirth Shop upgrades</b>'+(S.abil.eternal?' (Phantom Steward, Cycle Sigil and Swift Rebirth are kept by Eternal Cycle)':'')+', and this cycle\'s Ascensions. Beast levels drop to 1.</p><p>Kept: Divinity, God Abilities, beast bonds, total Ascensions, achievements and stats.</p><div class="two"><button class="big alt" data-act="close">Not yet</button><button class="big" data-act="dogod">Become a god</button></div>')}
+   modal('<h2>✴️ God Rebirth?</h2><p>You will gain <b style="color:#ffe08a">+'+fmt(d)+' Divinity</b> (+'+fmt(d*DIV_BONUS*100)+'% Ki forever, and points for God Abilities).</p><p>Resets: Ki, clan, training, bloodlines, <b>all Spirit Seals and Rebirth Shop upgrades</b>'+(S.abil.eternal?' (Phantom Steward, Cycle Sigil and Swift Rebirth are kept by Eternal Cycle)':'')+', and this cycle\'s Ascensions. Beast levels drop to 1.</p><p>Kept: Divinity, God Abilities, beast bonds, total Ascensions, talents, Shadow Tappers, achievements and stats.</p><div class="two"><button class="big alt" data-act="close">Not yet</button><button class="big" data-act="dogod">Become a god</button></div>')}
   else if(a==='dogod'){var got=godRebirth();closeModal();if(got){snd('asc');bigFx('✴️','#ffe08a','God Rebirth!<small>+'+fmt(got)+' Divinity</small>');buildPanel()}}
-  else if(a==='qty'){S.buyQty=b.dataset.q==='max'?'max':+b.dataset.q;buildPanel()}
+  else if(a==='qty'){S.buyQty=b.dataset.q==='max'?'max':+b.dataset.q;buildPanel();save()}
   else if(a==='ascend'){var g=sealsOnAscend();if(g<1){snd('no');return}
-   modal('<h2>🔮 Ascend?</h2><p>You will gain <b style="color:var(--acc2)">+'+g+' Spirit Seals</b> (+'+fmt(g*10)+'% Ki forever).</p><p>Your Ki, clan, training and bloodlines reset'+(S.abil.legacy?' (your first '+(6*S.abil.legacy)+' bloodlines stay)':'')+'. Seals, perks, beasts, achievements and stats stay.</p><div class="two"><button class="big alt" data-act="close">Not yet</button><button class="big" data-act="doascend">Ascend</button></div>')}
-  else if(a==='doascend'){var got=ascend();closeModal();if(got){snd('asc');toast('🔮 Ascended! +'+fmt(got)+' Spirit Seals');buildPanel()}}
+   modal('<h2>🔮 Ascend?</h2><p class="mbig">+'+fmt(g)+' Spirit Seals</p><p>That is <b>+'+fmt(g*10)+'% Ki</b> forever'+(S.sixth?'. Your Sixth Path ends with this run, and the next run rolls again':'')+'.</p><p>Resets: Ki, clan, training and bloodlines'+(legacyKeep().length?' (your first '+legacyKeep().length+' bloodlines stay)':'')+'.<br>Kept: seals, Shop upgrades, beasts, talents, achievements and stats.</p><div class="two"><button class="big alt" data-act="close">Not yet</button><button class="big" data-act="doascend">Ascend</button></div>')}
+  else if(a==='doascend'){var got2=ascend();closeModal();if(got2){snd('asc');toast('🔮 Ascended! +'+fmt(got2)+' Spirit Seals');buildPanel()}}
   else if(a==='close'){closeModal()}
   else if(a==='sound'){S.sound=!S.sound;if(S.sound){ac();snd('buy')}refresh();save()}
-  else if(a==='sci'){S.sci=!S.sci;refresh(true);buildPanel()}
+  else if(a==='vib'){S.vib=!S.vib;if(S.vib&&navigator.vibrate)try{navigator.vibrate(20)}catch(_){}refresh();save()}
+  else if(a==='fxt'){S.fx=!S.fx;refresh();save()}
+  else if(a==='evt'){S.events=!S.events;refresh();save()}
+  else if(a==='nf'){var nf=+b.dataset.q;if(nf!==S.nf){S.nf=nf;S.nfT++;checkAch()}refresh(true);save()}
+  else if(a==='tips'){S.tut=0;S.tipsOff=false;refreshTip();toast('💡 Tips are back on')}
+  else if(a==='tipok'){S.tut++;refreshTip()}
+  else if(a==='tipoff'){S.tipsOff=true;refreshTip();toast('Tips hidden. Turn them back on in More › Settings.')}
   else if(a==='savenow'){toast(save()?'💾 Saved':'⚠️ Could not save (storage blocked)')}
   else if(a==='export'){var code=exportSave();modal('<h2>📤 Export save</h2><p>Copy this code and keep it somewhere safe (Notes app, a message to yourself).</p><textarea id="exp" readonly>'+code+'</textarea><div class="two"><button class="big alt" data-act="close">Close</button><button class="big" data-act="copy">Copy</button></div>')}
   else if(a==='copy'){var t=$('exp');t.select();t.setSelectionRange(0,99999);var done=function(){toast('📋 Copied')};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t.value).then(done,function(){try{document.execCommand('copy');done()}catch(_){toast('Select the text and copy it')}});else{try{document.execCommand('copy');done()}catch(_){toast('Select the text and copy it')}}}
   else if(a==='import'){modal('<h2>📥 Import save</h2><p>Paste a save code below. This replaces your current progress.</p><textarea id="imp" placeholder="Paste code here"></textarea><div class="two"><button class="big alt" data-act="close">Cancel</button><button class="big" data-act="doimport">Import</button></div>')}
   else if(a==='doimport'){if(importSave($('imp').value)){closeModal();toast('✅ Save imported');scheduleFox();buildPanel()}else toast('⚠️ That code did not work')}
-  else if(a==='reset'){modal('<h2>🗑️ Reset everything?</h2><p>This deletes <b>all</b> progress, including seals and achievements. It cannot be undone. Export your save first if you might want it back.</p><div class="two"><button class="big alt" data-act="close">Cancel</button><button class="big danger" data-act="doreset">Delete</button></div>')}
-  else if(a==='doreset'){hardReset();closeModal();tab='clan';document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x.dataset.tab==='clan')});buildPanel();toast('Progress reset')}
+  else if(a==='reset'){modal('<h2>🗑️ Reset everything?</h2><p>This deletes <b>all</b> progress, including seals, talents and achievements. It cannot be undone. Export your save first if you might want it back.</p><p>Type <b>RESET</b> to confirm:</p><input id="rsIn" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="RESET"><div class="two"><button class="big alt" data-act="rscancel">Cancel</button><button class="big danger no" data-act="doreset" id="rsBtn">Delete</button></div>')}
+  else if(a==='rscancel'){S.resetCancel++;closeModal();checkAch()}
+  else if(a==='doreset'){var inp=$('rsIn');if(!inp||inp.value.trim().toUpperCase()!=='RESET'){snd('no');toast('Type RESET to confirm');return}hardReset();closeModal();subs={clan:'clan',ascend:'asc',quest:'goals',more:'ach'};navTo('clan');toast('Progress reset')}
+  else if(a==='achf'){achF=b.dataset.q;buildPanel()}
+  else if(a==='daily'){var r=claimDaily();closeModal();if(r){snd('ach');bigFx('🎁','#ffc65c','Day '+r.day+' gift!<small>'+dailyText(r.r)+'</small>');refresh(true)}}
+  else if(a==='qgo'){var qi=+b.dataset.q,q=S.q[qi];if(qDone(q)){var txt=claimQ(qi);snd('ach');toast('🎯 Mission complete! '+txt)}else if(rerollQ(qi)){snd('buy');toast('🎲 New mission rolled')}else snd('no');refresh(true)}
+  else if(a==='trial'){if(trialStart()){snd('fox');toast('⚔️ '+trialBoss(TR.lv)[1]+' appears! Tap the orb!');buildPanel()}else snd('no')}
+  else if(a==='trquit'){trialEnd(false)}
+  else if(a==='exp'){if(expSend(+b.dataset.q)){snd('buy');toast('🧭 Squad sent: '+EXPD[+b.dataset.q].name);save()}else snd('no');refresh(true)}
+  else if(a==='expc'){var out=expClaim(+b.dataset.q);if(out){snd('ach');toast('🧭 +'+fmt(out.ki)+' Ki'+(out.sl?' · +'+fmt(out.sl)+' Seals':'')+(out.tap?' · 🥷 A Shadow Tapper joined!':'')+(out.mp?' · +1 Mastery':''));save()}else snd('no');refresh(true)}
+  else if(a==='tsel'){selTal=id;refresh(true)}
+  else if(a==='tal'){ok=buyTal(id);snd(ok?'ach':'no');if(ok){var tt=TAL.find(function(x){return x.id===id});toast('🌳 Learned '+tt.name);var i2=TAL.indexOf(tt);if(i2%5<4)selTal=TAL[i2+1].id;save()}refresh(true)}
+  else if(a==='respec'){if(!talOwned()){snd('no');return}modal('<h2>↺ Respec talents?</h2><p>All '+fmt(S.mpSpent)+' Mastery Points come back so you can choose again. It is free.</p><div class="two"><button class="big alt" data-act="close">Cancel</button><button class="big" data-act="dorespec">Respec</button></div>')}
+  else if(a==='dorespec'){respec();closeModal();selTal='t1';toast('↺ Talents refunded');save();refresh(true)}
+  else if(a==='skin'){if(setSkin(id)){snd('buy');save();refresh(true)}else{snd('no');var sk=SKINS.find(function(x){return x.id===id});if(sk)toast('🔒 '+sk.name+': '+sk.req)}}
  });
  $('modal').addEventListener('click',function(e){if(e.target===$('modal'))closeModal()});
  document.addEventListener('visibilitychange',function(){if(document.hidden)save();else{tick()}});
@@ -742,21 +1241,29 @@ function wire(){
 }
 
 function init(){
+ var st=document.createElement('style');st.textContent=SKINS.map(function(k){return '#orb.sk-'+k.id+',.sw.sk-'+k.id+'{background:'+k.bg+'}'}).join('');document.head.appendChild(st);
  var loaded=load();
  wire();
- if(loaded){var away=(Date.now()-S.lastSeen)/1000;if(away>10)applyOffline(away,true)}
-
- else{S.ki=0;rollSixth(true);modal('<h2>⛩️ Bloodline Dojo</h2><p>Your clan has fallen to just one student: <b>you</b>.</p><p>👊 <b>Tap the orb</b> to train Ki.<br>🥷 <b>Recruit</b> clan members who train for you, even offline.<br>🩸 <b>Awaken bloodlines</b> for huge multipliers.<br>🔮 <b>Ascend</b> to earn Spirit Seals and spend them in the <b>Rebirth Shop</b> (Auto Clicker and more).<br>🦊 Catch the <b>spirit fox</b> when it appears!<br>🐾 After 100 Ascensions, <b>spirit beasts</b> awaken, and beyond that lies <b>God Rebirth</b>.</p>'+(S.sixth?'<p style="color:#fff1a8;font-weight:800">🌟 Rare luck! You were born on the <b>Sixth Path</b>: ×10 production this run.</p>':'')+'<button class="big" data-act="close">Begin training</button>')}
- last=Date.now();scheduleFox();buildPanel();checkAch();save();
- setInterval(tick,100);setInterval(function(){if(!paused)refresh()},200);setInterval(function(){if(!paused)save()},5000);
+ if(loaded){var away=(Date.now()-S.lastSeen)/1000;if(away>10)applyOffline(away,true);if(S.dLast&&dailyReady())modalQ(dailyModal())}
+ else{S.ki=0;rollSixth(true);modal('<h2>⛩️ Bloodline Dojo</h2><p>Your clan has fallen to just one student: <b>you</b>.</p><p>👊 <b>Tap the orb</b> to train Ki.<br>🥷 <b>Recruit</b> clan members who train for you, even offline.<br>🩸 <b>Awaken bloodlines</b> for huge multipliers.<br>🔮 <b>Ascend</b> for Spirit Seals and spend them in the <b>Rebirth Shop</b>.<br>⚔️ <b>Quests</b>: daily gifts, missions, boss Trials, expeditions and Talents.<br>🦊 Catch the <b>spirit fox</b> when it appears!</p>'+(S.sixth?'<p style="color:#fff1a8;font-weight:800">🌟 Rare luck! You were born on the <b>Sixth Path</b>: ×10 production this run.</p>':'')+'<p class="hint" style="margin:0">Tips will guide you through your first steps.</p><button class="big" data-act="close">Begin training</button>')}
+ fillQ();last=Date.now();scheduleFox();buildPanel();checkAch();save();
+ setInterval(tick,100);setInterval(function(){if(!paused&&!document.hidden)refresh()},250);setInterval(function(){if(!paused)save()},5000);
 }
 
 window.BD={get S(){return S},set S(v){S=v},GENS:GENS,TECHS:TECHS,BLOODS:BLOODS,PERKS:PERKS,ACH:ACH,tap:tap,buyGen:buyGen,buyTech:buyTech,buyBlood:buyBlood,buyPerk:buyPerk,ascend:ascend,
- sealsOnAscend:sealsOnAscend,applyOffline:applyOffline,kps:kps,baseKps:baseKps,tapValue:tapValue,genCost:genCost,genRate:genRate,bloodCost:bloodCost,save:save,load:load,exportSave:exportSave,importSave:importSave,
+ sealsOnAscend:sealsOnAscend,sealsPotential:sealsPotential,applyOffline:applyOffline,kps:kps,baseKps:baseKps,tapValue:tapValue,genCost:genCost,genRate:genRate,bloodCost:bloodCost,save:save,load:load,exportSave:exportSave,importSave:importSave,
  hardReset:hardReset,fmt:fmt,step:step,checkAch:checkAch,catchFox:catchFox,offlineCapH:offlineCapH,offlineRate:offlineRate,KEY:KEY,refresh:refresh,buildPanel:buildPanel,
  VERSION:VERSION,BEASTS:BEASTS,ABIL:ABIL,MAXN:MAXN,GOD_ASC:GOD_ASC,ascG:ASC_G,cl:cl,merge:merge,fresh:fresh,buyBeast:buyBeast,beastCost:beastCost,beastRate:beastRate,beastKps:beastKps,clanKps:clanKps,beastCount:beastCount,
  godRebirth:godRebirth,divOnGod:divOnGod,buyAbil:buyAbil,useAbil:useAbil,abilReadyIn:abilReadyIn,autoBuy:autoBuy,tryAutoAsc:tryAutoAsc,legacyKeep:legacyKeep,globalMult:globalMult,sealGainMult:sealGainMult,
- bloodOpen:bloodOpen,ascMin:ascMin,minRun:minRun,rollSixth:rollSixth,sixthChance:sixthChance,sixthMult:sixthMult,setRng:function(seed){rng=typeof seed==='function'?seed:mulberry32(seed)},clickTps:clickTps,autoTaps:autoTaps,spawnSwarm:spawnSwarm,genesisSeals:genesisSeals,frenzy:frenzy,stormX:stormX,rampX:rampX,get paused(){return paused},set paused(v){paused=v},setTab:function(t,s2){tab=t;if(s2)sub=s2;document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x.dataset.tab===t)});buildPanel()}};
+ bloodOpen:bloodOpen,ascMin:ascMin,minRun:minRun,rollSixth:rollSixth,sixthChance:sixthChance,sixthMult:sixthMult,setRng:function(seed){rng=typeof seed==='function'?seed:mulberry32(seed)},clickTps:clickTps,autoTaps:autoTaps,autoTps:autoTps,spawnSwarm:spawnSwarm,genesisSeals:genesisSeals,frenzy:frenzy,stormX:stormX,rampX:rampX,
+ // v2.1
+ TAL:TAL,BOSSES:BOSSES,EXPD:EXPD,DAILY:DAILY,EVENTS:EVENTS,SKINS:SKINS,TIPS:TIPS,QT:QT,TR:function(){return TR},thriftPct:thriftPct,shopTiers:shopTiers,buyAllBlood:buyAllBlood,bloodPlan:bloodPlan,planLv:planLv,beastPlan:beastPlan,
+ buyTal:buyTal,respec:respec,talOpen:talOpen,talOwned:talOwned,mpAvail:mpAvail,gainMp:gainMp,trialStart:trialStart,trialEnd:trialEnd,trialTaps:trialTaps,trialMp:trialMp,trialOpen:trialOpen,
+ expSend:expSend,expClaim:expClaim,expSlots:expSlots,expPreview:expPreview,expCanSend:expCanSend,genQ:genQ,fillQ:fillQ,claimQ:claimQ,rerollQ:rerollQ,qDone:qDone,qProg:qProg,
+ claimDaily:claimDaily,dailyReady:dailyReady,dailyNextStreak:dailyNextStreak,dayKey:dayKey,cycDay:cycDay,dailyReward:dailyReward,evStart:evStart,evCur:evCur,setSkin:setSkin,skinOk:skinOk,tipNow:tipNow,timers:timers,buffX:buffX,critChance:critChance,
+ countAch:countAch,toast:toast,closeModal:closeModal,perf:function(reset){var o={avg:perfN?perfT/perfN:0,max:perfMax,n:perfN};if(reset){perfT=0;perfN=0;perfMax=0}return o},
+ get paused(){return paused},set paused(v){paused=v},
+ get tab(){return tab},get sub(){return subs[tab]},setTab:function(t,s2){if(t==='tech'){t='clan';s2='tech'}if(t==='clan'&&!s2)s2='clan';if(s2)subs[t]=s2;navTo(t)}};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
 </script>
